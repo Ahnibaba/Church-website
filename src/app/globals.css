@@ -2,8 +2,21 @@
 
 
 
-body {
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
   margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+.font-playFair {
+  font-family: var(--font-playFair);
 }
 
 

@@ -17,7 +17,7 @@ export const Logo = () => {
           className="object-contain"
         />
       </div>
-      <div className="w-px h-15 bg-gray-700 mr-2 max-[900px]:hidden"></div>
+      <div className="w-px h-15 bg-gray-300 mr-2 max-[900px]:hidden"></div>
       <h1 className="items-center text-gray-700 max-[900px]:hidden">
         Redeemed International<br/>Calvary Mission
       </h1>

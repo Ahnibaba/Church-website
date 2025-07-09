@@ -9,14 +9,14 @@ export const playFair = Playfair_Display({
   variable: '--font-playFair',
 })
 
-export const roboto = Roboto({
+const roboto = Roboto({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-roboto',
 })
 
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: {
     default: "Redeemed International Calvary Mission",
     template: "%s | Redeemed International Calvary Mission"

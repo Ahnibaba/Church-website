@@ -1,4 +1,3 @@
-import { playFair, roboto } from "@/app/layout"
 import Link from "next/link"
 import { Logo } from "@/components/Logo"
 
@@ -13,7 +12,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className={`${roboto.className} flex max-[900px]:hidden space-x-4 lg:space-x-6`}>
+                <div className={`font-roboto flex max-[900px]:hidden space-x-4 lg:space-x-6`}>
                     <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                         Home
                     </Link>

@@ -13,8 +13,8 @@ export const Footer = () => {
                             <h1 className="font-light uppercase text-2xl tracking-wider mb-5">ABOUT US</h1>
                             <div className="max-w-xs mb-6">
                                 <p className="text-base">
-                                    I`&apos;`m a paragraph. Click here to add your own text and edit me.
-                                    I`&apos;`m a great place for you to tell a story and let your users know a little more about you.
+                                    I&apos;m a paragraph. Click here to add your own text and edit me.
+                                    I&apos;m a great place for you to tell a story and let your users know a little more about you.
                                 </p>
                             </div>
                             <div className="flex gap-4 text-xl">
@@ -50,7 +50,7 @@ export const Footer = () => {
                                     <input type="checkbox" id="subscribe" />
                                     <label htmlFor="subscribe">Subscribe to newsletter</label>
                                 </div>
-                                <button className="px-6 py-2 bg-[#a39e9e] text-[#2f2e2e] hover:bg-white transition-colors">
+                                <button className="px-6 py-2 bg-[#a39e9e] text-[#2f2e2e] hover:bg-white transition-colors w-full">
                                     Subscribe Now
                                 </button>
                             </div>

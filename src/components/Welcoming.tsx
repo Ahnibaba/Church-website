@@ -47,11 +47,12 @@ export const Welcoming = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8 w-full">
             {welcomingData.map((item: welcome, index) => (
               <div 
                 key={index} 
-                className="flex flex-col bg-[#D3CCBA]/20 hover:shadow-lg transition-shadow duration-300"
+                className={`w-full flex flex-col bg-[#D3CCBA]/20 hover:shadow-lg transition-shadow duration-300
+                  ${index === welcomingData.length - 1 ? "md:col-span-2 md:max-w-md lg:col-span-1" : ""}`}
               >
                 <div className="w-full aspect-w-4 aspect-h-3">
                   <img 

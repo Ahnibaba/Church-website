@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer"
 import { Navbar } from "@/components/Navbar"
 import { NextEvent } from "@/components/nextEvent/NextEvent"
 import { Parallax } from "@/components/Parallex"
@@ -22,6 +23,7 @@ export default function Home() {
         <NextEvent />
         <Welcoming />
         <Parallax />
+        <Footer />
      </>
    )
 }

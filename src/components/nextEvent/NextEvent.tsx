@@ -49,7 +49,7 @@ export const NextEvent = () => {
     
 
     return (
-        <section className="w-full h-[80vh]  bg-[#D3CCBA]/20 flex items-center justify-center">
+        <section className="w-full h-[85vh]  bg-[#D3CCBA]/20 flex items-center justify-center">
             <div className="w-full flex items-center justify-center">
 
                 <div className="w-full flex flex-col items-center justify-center">
@@ -57,16 +57,16 @@ export const NextEvent = () => {
                         <h1 className="font-light uppercase font-playFair text-4xl tracking-wider text-[#EE4B2B]">Next Events</h1>
                     </div>
 
-                    <div className="hidden sm:grid lg:grid-cols-3 sm:grid-cols-2 mt-5 sm:gap-10 lg:gap-0
+                    <div className="hidden sm:grid md:grid-cols-2 lg:grid-cols-3 mt-5 sm:gap-10 lg:gap-0 justify-items-center
                     ">
 
                         {nextEventData.map((item, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center ">
-                                <div className={`flex flex-col justify-center items-center px-5 lg:px-10 py-0 ${index !== nextEventLength - 1 && "border-r-1"} border-gray-400 mb-[2rem] lg:mb-[5rem]`}>
+                            <div key={index} className={`flex flex-col justify-center items-center border-gray-400 p-5 ${index === nextEventLength - 1 ? "sm:col-span-2 sm:max-w-sm lg:col-span-1" : ""}`}>
+                                <div className={`flex flex-col justify-center items-center px-5 lg:px-10 py-0 mb-[2rem] lg:mb-[5rem]`}>
                                     <h1 className="font-light uppercase font-playFair text-4xl lg:tracking-wider text-gray-700">25/FEB</h1>
                                     <div className="mt-[1.5rem] lg:mt-[5rem] flex flex-col items-center justify-center font-roboto text-gray-800 w-full">
-                                        <p className="font-bold">Debate: God in the Modern World</p>
-                                        <p className="text-sm">Wednesday, February 25 at 15:00</p>
+                                        <p className="font-bold whitespace-nowrap">Debate: God in the Modern World</p>
+                                        <p className="text-sm whitespace-nowrap">Wednesday, February 25 at 15:00</p>
                                     </div>
                                 </div>
                                 <Link href="/services" className="flex gap-0.5 justify-center items-center uppercase tracking-tight text-xs text-[#EE4B2B]">

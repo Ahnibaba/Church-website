@@ -1,22 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display, Roboto } from "next/font/google"
+import { playFair, roboto } from '@/lib/fonts';
 
-
-export const playFair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-playFair',
-})
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-roboto',
-})
-
-
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Redeemed International Calvary Mission",
     template: "%s | Redeemed International Calvary Mission"

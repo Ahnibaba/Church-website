@@ -7,7 +7,7 @@ export const sliderData = [
 
   },
   {
-    image: "https://plus.unsplash.com/premium_photo-1726880646700-a0848d71f7b5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/church3.jpg",
     heading: "Fellowship",
     desc: "Not forsaking the assembling of ourselves together, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approaching.",
     verse: "Heb 10:25"
@@ -19,7 +19,7 @@ export const sliderData = [
     verse: "Isa 12:3"
   },
   {
-    image: "https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyb3VwJTIwb2YlMjBjaHJpc3RpYW5zfGVufDB8fDB8fHww",
+    image: "/church4.jpg",
     heading: "God is Spirit",
     desc: "God is a Spirit: and they that worship him must worship him in spirit and in truth.",
     verse: "John 4:24"

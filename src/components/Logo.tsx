@@ -1,21 +1,26 @@
-"use client"
+"use client";
 
-import { UseWindowSize } from "@/utils/UseWindowSize"
-import { Space_Mono } from "next/font/google"
+import Image from "next/image";
+
 
 export const Logo = () => {
- const { width } = UseWindowSize()   
- return (
-    <>
-      {/* <img className="hidden sm:block" src="logo.jpg" alt="" />
-      <img className="block sm:hidden" src="small-logo.jpg" alt="" /> */}
-      <div className="flex justify-center items-center">
-        <div className="w-20">
-          <img src="lg.png" alt="" />
-        </div>
-        <div className="w-px h-15 bg-gray-700 mr-2 max-[900px]: block"></div>
-        <h1 className="items-center font-roboto text-gray-700 max-[900px]: block">Redeemed International<br/>Calvary Mission</h1>
+ 
+  
+  return (
+    <div className="flex justify-center items-center">
+      <div className="w-20">
+        <Image 
+          src="/lg.png" 
+          alt="Church Logo"
+          width={80}  // Match the container width
+          height={80} // Adjust as needed
+          className="object-contain"
+        />
       </div>
-    </>
- )
-}
+      <div className="w-px h-15 bg-gray-700 mr-2 max-[900px]:hidden"></div>
+      <h1 className="items-center text-gray-700 max-[900px]:hidden">
+        Redeemed International<br/>Calvary Mission
+      </h1>
+    </div>
+  );
+};

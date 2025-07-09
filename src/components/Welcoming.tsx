@@ -1,33 +1,34 @@
 import Link from "next/link";
+import Image from "next/image";
 
-type welcome = {
-  "image": string;
-  "title": string;
-  "desc": string;
-  "link": string;
-}
+type WelcomeCard = {
+  image: string;
+  title: string;
+  desc: string;
+  link: string;
+};
 
 export const Welcoming = () => {
-  const welcomingData: welcome[] = [
+  const welcomingData: WelcomeCard[] = [
     {
-      image: "https://static.wixstatic.com/media/3b1f25_6fa7e5a4b696428e83a1b2619086ee32.jpg/v1/fill/w_296,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3b1f25_6fa7e5a4b696428e83a1b2619086ee32.jpg",
+      image: "/church1.jpg",
       title: "ABOUT OUR CHURCH",
-      desc: "I'm a paragraph. Click here to add your own text and edit me.It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
+      desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "about"
     },
     {
-      image: "https://static.wixstatic.com/media/3b1f25_678daf7b0bfc46e0ba184ef4ca990dec.jpg/v1/fill/w_296,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3b1f25_678daf7b0bfc46e0ba184ef4ca990dec.jpg",
+      image: "/church2.jpg",
       title: "YOUTH CHURCH",
-      desc: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
+      desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "youth"
     },
     {
-      image: "https://static.wixstatic.com/media/8425ecadf47444dfb40f79663d4cb9c5.jpg/v1/fill/w_298,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/8425ecadf47444dfb40f79663d4cb9c5.jpg",
+      image: "/church3.jpg",
       title: "TEENS CHURCH",
-      desc: "I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click 'Edit Text' or double click me to add your own content and make changes to the font.",
+      desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "teens"
     }
-  ]
+  ];
   
   return (
     <div className="w-full py-20 px-4 sm:px-6 lg:px-8">
@@ -41,24 +42,26 @@ export const Welcoming = () => {
 
           <div className="w-full max-w-3xl mb-12">
             <p className="text-center font-roboto text-gray-700">
-              I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or
+              I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &quot;Edit Text&quot; or
               double click me to add your own content and make changes to the font.
-              I'm a great place for you to tell a story and let your users know a little more about you.
+              I&apos;m a great place for you to tell a story and let your users know a little more about you.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8 w-full">
-            {welcomingData.map((item: welcome, index) => (
+            {welcomingData.map((item: WelcomeCard, index) => (
               <div 
                 key={index} 
                 className={`w-full flex flex-col bg-[#D3CCBA]/20 hover:shadow-lg transition-shadow duration-300
                   ${index === welcomingData.length - 1 ? "md:col-span-2 md:max-w-md lg:col-span-1" : ""}`}
               >
-                <div className="w-full aspect-w-4 aspect-h-3">
-                  <img 
-                    className="w-full h-full object-cover" 
-                    src={item.image} 
-                    alt={item.title} 
+                <div className="w-full aspect-[4/3] relative">
+                  <Image 
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 
@@ -84,5 +87,5 @@ export const Welcoming = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

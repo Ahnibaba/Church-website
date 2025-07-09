@@ -78,16 +78,17 @@ export const NextEvent = () => {
 
                         ))}
                     </div>
-
-                    <div className="relative sm:hidden flex items-center justify-center w-full h-[25rem] overflow-hidden">
-                        <IoIosArrowForward
-                            className="absolute right-5 rounded-full border-2 border-gray-600 bg-transparent text-gray-600 size-5 cursor-pointer z-10 hover:bg-white hover:text-gray-500 transition-colors"
+                    <IoIosArrowForward
+                            className="absolute sm:hidden right-5 rounded-full border-2 border-gray-600 bg-transparent text-gray-600 size-5 cursor-pointer z-10 hover:bg-white hover:text-gray-500 transition-colors"
                             onClick={nextSlide}
                         />
                         <IoIosArrowBack
-                            className="absolute left-5 rounded-full border-2 border-gray-600 bg-transparent text-gray-600 size-5 cursor-pointer z-10 hover:bg-white hover:text-gray-500 transition-color"
+                            className="absolute sm:hidden left-5 rounded-full border-2 border-gray-600 bg-transparent text-gray-600 size-5 cursor-pointer z-10 hover:bg-white hover:text-gray-500 transition-color"
                             onClick={prevSlide}
                         />
+
+                    <div className="relative sm:hidden flex items-center justify-center w-full h-[25rem] overflow-hidden">
+                        
                         <div className="relative w-full h-full">
                             {nextEventData.map((item, index) => (
                                 <div

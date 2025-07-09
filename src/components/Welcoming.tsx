@@ -25,7 +25,7 @@ export const Welcoming = () => {
     {
       image: "/church3.jpg",
       title: "TEENS CHURCH",
-      desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
+      desc: "I{&apos;}m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "teens"
     }
   ];

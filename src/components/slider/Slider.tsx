@@ -53,7 +53,7 @@ export const Slider = () => {
   }
 
   return (
-    <div className="w-full h-[50vh] sm:h-[90vh] relative overflow-hidden">
+    <div className="w-full h-[55vh] sm:h-[90vh] relative overflow-hidden">
       {/* Navigation Arrows */}
       <IoIosArrowBack 
         onClick={prevSlide} 
@@ -85,7 +85,7 @@ export const Slider = () => {
             />
             </div>
             <div className="w-full flex items-center">
-              <div className={`absolute top-0 left-0 sm:top-[10rem] max-w-[300px] sm:max-w-lg md:max-w-xl ml-4 sm:ml-20 text-white bg-black/50 p-5 transition-all duration-2000 ease-in-out ${
+              <div className={`absolute top-[3rem] left-0 sm:top-[10rem] max-w-[300px] sm:max-w-lg md:max-w-xl ml-4 sm:ml-20 text-white bg-black/50 p-5 transition-all duration-2000 ease-in-out ${
                 index === currentSlide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               } content-animate ${index === 4 && "hidden"}`}>
                 <h2 className={`font-playFair font-bold text-xl sm:text-2xl md:text-3xl`}>

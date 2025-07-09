@@ -13,7 +13,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className={`${roboto.className} hidden min-[768px]:flex space-x-4 lg:space-x-6`}>
+                <div className={`${roboto.className} flex max-[900px]:hidden space-x-4 lg:space-x-6`}>
                     <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                         Home
                     </Link>

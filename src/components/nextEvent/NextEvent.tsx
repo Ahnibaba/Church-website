@@ -49,7 +49,7 @@ export const NextEvent = () => {
     
 
     return (
-        <section className="w-full h-[70vh]  bg-[#D3CCBA]/20 flex items-center justify-center">
+        <section className="w-full h-[80vh]  bg-[#D3CCBA]/20 flex items-center justify-center">
             <div className="w-full flex items-center justify-center">
 
                 <div className="w-full flex flex-col items-center justify-center">

@@ -13,8 +13,8 @@ export const Logo = () => {
         <div className="w-20">
           <img src="lg.png" alt="" />
         </div>
-        <div className="w-px h-15 bg-gray-700 mr-2 hidden lg:block"></div>
-        <h1 className="items-center font-roboto text-gray-700 hidden lg:block">Redeemed International<br/>Calvary Mission</h1>
+        <div className="w-px h-15 bg-gray-700 mr-2 max-[900px]: block"></div>
+        <h1 className="items-center font-roboto text-gray-700 max-[900px]: block">Redeemed International<br/>Calvary Mission</h1>
       </div>
     </>
  )

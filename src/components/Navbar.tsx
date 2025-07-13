@@ -54,40 +54,41 @@ export const Navbar = () => {
             transition-transform duration-300 z-50 ${navDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
                 <div className="flex justify-between mb-5">
-                    <div className="flex items-center">
                       <Logo />
-                      <div className="w-px h-5 bg-gray-300 mr-2 "></div>
-                      <h1 className="items-center text-gray-700 font-bold font-roboto text-xl">
-                        RICAM
-                     </h1>
-                    </div>
                     <button onClick={toggleNavDrawer} className="m-3">
                         <IoMdClose className="size-6 text-gray-600" />
                     </button>
                 </div>
                 <div className="p-4">
-                    <nav className="flex flex-col space-y-4">
+                    <nav className="flex flex-col space-y-4 ml-7">
                         <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Home
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="/about-us" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             About us
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Services
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Sunday School
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Youth Ministry
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Branch
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Contact-us
                         </Link>
+                        <hr className="w-full text-gray-400" />
                     </nav>
                 </div>
             </div>

@@ -8,7 +8,7 @@ export const Logo = () => {
   
   return (
     <div className="flex justify-center items-center">
-      <div className="w-40 aspect-[1.414]">
+      <div className="w-30 sm:w-40 aspect-[1.414]">
         <Image
           src="/ricam-logo.png" 
           alt="Church Logo"

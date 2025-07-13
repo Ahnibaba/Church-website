@@ -92,7 +92,7 @@ export const NextEvent = () => {
             </div>
             <Link
                 href="/services"
-                className="flex items-center gap-1 uppercase tracking-tight text-xs text-[#EE4B2B] hover:text-[#C03A20] transition-colors"
+                className="flex items-center gap-1 uppercase tracking-tight text-xs text-[#d63037] hover:text-[#d63038b6] transition-colors"
             >
                 More info
                 <span>{">>"}</span>
@@ -105,7 +105,7 @@ export const NextEvent = () => {
             <div className="container mx-auto px-4">
                 {/* Title */}
                 <div className="text-center mb-10">
-                    <h1 className="font-light uppercase font-playFair text-4xl tracking-wider text-[#EE4B2B]">
+                    <h1 className="font-light uppercase font-playFair text-4xl tracking-wider text-[#d63037]">
                         Next Events
                     </h1>
                 </div>

@@ -35,7 +35,7 @@ export const Welcoming = () => {
       <div className="max-w-sm md:max-w-7xl mx-auto">
         <div className="flex flex-col items-center">
           <div className="w-full max-w-3xl mb-12">
-            <h1 className="text-center font-extralight text-4xl sm:text-5xl tracking-wider font-playFair text-[#EE4B2B]">
+            <h1 className="text-center font-extralight text-4xl sm:text-5xl tracking-wider font-playFair text-[#d63037]">
               Welcoming You Home
             </h1>
           </div>
@@ -66,7 +66,7 @@ export const Welcoming = () => {
                 </div>
                 
                 <div className="p-6 flex flex-col items-center">
-                  <h2 className="text-center font-extralight text-2xl tracking-wider font-playFair text-[#EE4B2B] whitespace-nowrap">
+                  <h2 className="text-center font-extralight text-2xl tracking-wider font-playFair text-[#d63037] whitespace-nowrap">
                     {item.title}
                   </h2>
                   <hr className="mt-6 mb-4 w-16 border-t border-gray-300" />
@@ -75,7 +75,7 @@ export const Welcoming = () => {
                   </p>
                   <Link 
                     href={`/${item.link}`} 
-                    className="flex items-center gap-1 uppercase tracking-tight text-xs text-[#EE4B2B] mt-4 hover:underline"
+                    className="flex items-center gap-1 uppercase tracking-tight text-xs text-[#d63037] mt-4 hover:underline"
                   >
                     <span>more info</span>
                     <span>{">>"}</span>

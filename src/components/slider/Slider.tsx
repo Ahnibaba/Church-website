@@ -98,7 +98,7 @@ export const Slider = () => {
                   {item.desc}
                 </p>
                 <hr className="my-3 h-0.5 bg-white w-1/2" />
-                <button className="bg-[#EE4B2B] px-4 py-2 text-sm sm:text-base rounded transition-colors hover:bg-[#d44327]">
+                <button className="bg-[#d63037] px-4 py-2 text-sm sm:text-base rounded transition-colors hover:bg-[#d44327]">
                   {item.verse}
                 </button>
               </div>

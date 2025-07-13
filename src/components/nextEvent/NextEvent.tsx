@@ -136,17 +136,17 @@ export const NextEvent = () => {
                         <>
                             <button
                                 onClick={prevSlide}
-                                className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border-2 border-gray-600 bg-white/80 text-gray-600 size-10 flex items-center justify-center cursor-pointer z-20 hover:bg-white transition-all"
+                                className="absolute left-1 top-1/2 -translate-y-1/2 rounded-full border-2 border-gray-600 bg-white/80 text-gray-600 size-6 flex items-center justify-center cursor-pointer z-20 hover:bg-white transition-all"
                                 aria-label="Previous event"
                             >
-                                <IoIosArrowBack size={20} />
+                                <IoIosArrowBack size={15} />
                             </button>
                             <button
                                 onClick={nextSlide}
-                                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border-2 border-gray-600 bg-white/80 text-gray-600 size-10 flex items-center justify-center cursor-pointer z-20 hover:bg-white transition-all"
+                                className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full border-2 border-gray-600 bg-white/80 text-gray-600 size-6 flex items-center justify-center cursor-pointer z-20 hover:bg-white transition-all"
                                 aria-label="Next event"
                             >
-                                <IoIosArrowForward size={20} />
+                                <IoIosArrowForward size={15} />
                             </button>
                         </>
                     )}

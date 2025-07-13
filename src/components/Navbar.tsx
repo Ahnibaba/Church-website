@@ -60,7 +60,7 @@ export const Navbar = () => {
                     </button>
                 </div>
                 <div className="p-4">
-                    <nav className="flex flex-col space-y-4 ml-7">
+                    <nav className="flex flex-col space-y-4 ml-7" onClick={toggleNavDrawer}>
                         <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Home
                         </Link>

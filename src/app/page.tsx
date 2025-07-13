@@ -1,3 +1,4 @@
+import { About } from "@/components/about"
 import { NextEvent } from "@/components/nextEvent/NextEvent"
 import { Parallax } from "@/components/Parallex"
 import { Slider } from "@/components/slider/Slider"
@@ -18,6 +19,7 @@ export default function Home() {
      <>
         
         <Slider />
+        <About />
         <NextEvent />
         <Welcoming />
         <Parallax />

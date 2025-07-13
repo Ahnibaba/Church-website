@@ -1,7 +1,7 @@
 export const Hero = ({ imageString }: { imageString: string }) => {
     return (
     <div 
-       className="relative flex items-center justify-center h-[70vh] bg-center bg-cover bg-fixed"
+       className="relative flex items-center justify-center h-[70vh] bg-center bg-cover bg-scroll lg:bg-fixed"
        style={{ backgroundImage: `url(${imageString})` }}
       >
         <div className="absolute inset-0 bg-gray-900/50 flex items-center justify-center">

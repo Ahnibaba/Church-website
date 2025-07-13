@@ -38,7 +38,10 @@ export const Navbar = () => {
                         Youth Ministry
                     </Link>
                     <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                        Donations
+                        Branch
+                    </Link>
+                    <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                        Contact-us
                     </Link>
                 </div>
 
@@ -82,7 +85,10 @@ export const Navbar = () => {
                             Youth Ministry
                         </Link>
                         <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Donations
+                            Branch
+                        </Link>
+                        <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                            Contact-us
                         </Link>
                     </nav>
                 </div>

@@ -14,7 +14,7 @@ export const Hero = ({ imageString }: { imageString: string }) => {
               <h1 className="text-center font-bold text-xl sm:text-2xl text-white font-playFair tracking-widest">ABOUT US</h1>
               <div className="my-5 w-full p-5">
                 <p className="sm:text-xl text-lg font-roboto font-bold text-white text-center">
-                   We are a mission, Commissioned to raising and nurturing God's Children for Heaven,
+                   We are a mission, Commissioned to raising and nurturing God&apos;s Children for Heaven,
                    saddled with the task of propagating sound doctrines, far from heireses, making sure the government of
                    Heaven gains expression in the sphere of all realms.
 

@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Footer"
 import { NextEvent } from "@/components/nextEvent/NextEvent"
 import { Parallax } from "@/components/Parallex"
 import { Slider } from "@/components/slider/Slider"

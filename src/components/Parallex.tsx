@@ -1,6 +1,6 @@
 export const Parallax = () => {
   return (
-    <div className="relative h-[70vh] w-full bg-[url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover bg-fixed">
+    <div className="relative overflow-hidden w-full bg-[url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover bg-fixed">
       {/* Overlay */}
       <div className="absolute inset-0 bg-gray-900/50"></div>
       

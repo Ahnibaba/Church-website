@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { playFair, roboto } from '@/lib/fonts';
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -18,9 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+       
         className={`antialiased ${playFair.variable} ${roboto.variable}`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

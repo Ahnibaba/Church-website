@@ -25,7 +25,7 @@ export const Navbar = () => {
                     <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                         Home
                     </Link>
-                    <Link href="/about" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="/about-us" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                         About us
                     </Link>
                     <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
@@ -69,7 +69,7 @@ export const Navbar = () => {
                         <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Home
                         </Link>
-                        <Link href="/about" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                        <Link href="/about-us" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             About us
                         </Link>
                         <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">

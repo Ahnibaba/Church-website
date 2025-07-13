@@ -1,14 +1,16 @@
 
-export const Parallax = () => {
+export const Parallax = ({ imageString }: { imageString: string }) => {
+
   return (
     <div 
-      className="relative flex items-center justify-center h-[70vh] bg-fixed bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+      className="relative flex items-center justify-center h-[70vh]"
+      style={{backgroundImage: `url(${imageString})`, backgroundPosition: "center", backgroundSize: "cover", backgroundAttachment: "fixed"}}
       
     >
       <div className="absolute inset-0 bg-gray-900/50"></div>
       
       {/* Optional content container */}
-      <div className="relative z-10 px-4 text-center text-white max-w-5xl mx-auto bg-red-700/50 p-5">
+      <div className="relative z-10 px-4 text-center text-white max-w-5xl mx-auto bg-black/50 p-5">
         <h1 className="text-center font-bold text-xl sm:text-2xl tracking-wider font-roboto text-white mb-4">HELP US TO SPREAD OUR LOVE AND FAITH</h1>
         <div className="max-w-[100%]">
            <p className="md:text-xl mb-8 font-roboto text-base">

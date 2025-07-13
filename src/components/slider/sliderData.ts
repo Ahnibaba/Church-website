@@ -13,7 +13,7 @@ export const sliderData = [
     verse: "Heb 10:25"
   },
   {
-    image: "/church2.jpg",
+    image: "/smile-mum.jpg",
     heading: "Joy",
     desc: "Therefore with joy shall ye draw water out of the wells of salvation. There also you and your households shall eat before the Lord your God, and rejoice in all your undertakings in which the Lord your God has blessed you.",
     verse: "Isa 12:3"

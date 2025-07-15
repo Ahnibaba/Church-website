@@ -42,7 +42,7 @@ const services: ServiceObj[] = [
         image: "/bible-study.jpg",
         title: "BIBLE STUDY",
         sch: "EVERY TUESDAY",
-        desc: "Come, Learn at the feet of the father"
+        desc: "Come, Learn at the feet of the father, gain wisdom for daily living, and strengthen their relationship with Christ. Regular Bible study equips Christians to discern God's will, transforms minds and hearts, and provides a firm foundation for spiritual growth"
     },
     {
         image: "/evang.jpg",
@@ -80,7 +80,7 @@ export default function Services() {
                             className={`${currentSlide !== index ? "w-[100px] h-[150px] top-[80%] transform transition-all duration-1000  -translate-y-[70%] left-[70%] rounded-[20px] shadow-[0_25px_30px_rgba(0,0,0,0.3)] bg-cover bg-center bg-no-repeat" : "absolute top-0 left-0 w-full h-full bg-[position:50%_50%] bg-cover"}}`}
                         >
                             {currentSlide === index && (
-                                <div className={`max-w-full sm:max-w-[50%] mx-5 my-15 text-white`}>
+                                <div className={`max-w-full sm:max-w-[50%] mx-5 my-30 sm:my-15  text-white`}>
                                     <div className={`${styles.title} text-[50px] sm:text-[100px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>{item.title}</div>
                                     <div className={`${styles.intro} text-[20px] uppercase font-bold leading-none`}>{item.sch}</div>
                                     <div className={`${styles.desc} mt-[10px] mb-[20px] text-[18px]`}>{item.desc}</div>

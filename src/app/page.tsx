@@ -1,6 +1,7 @@
 import { About } from "@/components/about"
 import { NextEvent } from "@/components/nextEvent/NextEvent"
 import { Parallax } from "@/components/Parallex"
+import Services from "@/components/services/Services"
 import { Slider } from "@/components/slider/Slider"
 import { Welcoming } from "@/components/Welcoming"
 import { Metadata } from "next"
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <NextEvent />
         <Welcoming />
+        <Services />
         <Parallax />
      </>
    )

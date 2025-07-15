@@ -12,7 +12,7 @@ export const Welcoming = () => {
   const welcomingData: WelcomeCard[] = [
     {
       image: "/church1.jpg",
-      title: "ABOUT OUR CHURCH",
+      title: "SUNDAY SCHOOL",
       desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "about"
     },

@@ -1,28 +1,73 @@
- .services-section{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+ .services-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
  }
- 
-
-.title, .intro, .desc, .btn{
-   opacity: 0;
-   animation: animate 1s ease-in-out 0.3s 1 forwards;
-}
 
 
-
-@keyframes animate {
-   from{
-      opacity: 0;
-      transform: translate(0, 100px);
-      filter: blur(33px)
-   }
-   to{
-      opacity: 1;
-      transform: translate(0);
-      filter: blur(0)
-   }
-}
+ .title,
+ .intro,
+ .desc,
+ .btn {
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+ }
 
 
+
+ @keyframes animate {
+    from {
+       opacity: 0;
+       transform: translate(0, 100px);
+       filter: blur(33px)
+    }
+
+    to {
+       opacity: 1;
+       transform: translate(0);
+       filter: blur(0)
+    }
+ }
+
+
+ @keyframes curtainRight {
+    0% {
+       clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+
+    50% {
+       clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    }
+
+    100% {
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+ }
+
+ @keyframes curtainLeft {
+    0% {
+       clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+
+    50% {
+       clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+
+    100% {
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+ }
+
+
+
+ @keyframes fadeIn {
+    from {
+       opacity: 0.7;
+       transform: scale(0.98);
+    }
+
+    to {
+       opacity: 1;
+       transform: scale(1);
+    }
+ }

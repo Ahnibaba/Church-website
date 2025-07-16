@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styles from "./services.module.css"
+import Image from "next/image";
 
 
 type ServiceObj = {
@@ -47,6 +48,24 @@ const services: ServiceObj[] = [
     {
         image: "/evang.jpg",
         title: "EVANGELISTIC SERVICE",
+        sch: "EVERY FRIDAY",
+        desc: "Come, lets carry on with the divine mandate of going into the world, preaching the gospel, baptising in the name of the Father, Son and the Holyspirit"
+    },
+    {
+        image: "/thanks.jpg",
+        title: "THANKS GIVIN SERVICE",
+        sch: "EVERY LAST SUNDAY OF THE MONTH",
+        desc: " Come and express your heartfelt gratitude to God for His goodness, mercy, and faithfulness in our lives. It is a moment to honor the One who daily loads us with benefits and to publicly give thanks for all He has done."
+    },
+    {
+        image: "/bible-study.jpg",
+        title: "BIBLE STUD",
+        sch: "EVERY TUESDAY",
+        desc: "Come, Learn at the feet of the father, gain wisdom for daily living, and strengthen their relationship with Christ. Regular Bible study equips Christians to discern God's will, transforms minds and hearts, and provides a firm foundation for spiritual growth"
+    },
+    {
+        image: "/evang.jpg",
+        title: "EVANGELIST SERVICE",
         sch: "EVERY FRIDAY",
         desc: "Come, lets carry on with the divine mandate of going into the world, preaching the gospel, baptising in the name of the Father, Son and the Holyspirit"
     },
@@ -103,28 +122,35 @@ export default function Services() {
         ...services.filter((_, index) => index !== currentSlide)
     ];
 
-   return (
-        <section className="h-[100dvh] sm:h-[170dvh] font-roboto bg-black"> {/* Changed to dvh for dynamic viewport */}
+    return (
+        <section className="h-[100dvh] font-roboto bg-black"> {/* Changed to dvh for dynamic viewport */}
             <div className="h-full">
                 <div className="relative h-full w-full -mt-[50px] overflow-hidden bg-black">
                     {/* Current Active Slide with Animation */}
                     <div
-                        style={{
-                            backgroundImage: `url(${services[currentSlide]?.image || ''})`,
-                        }}
-                        className={`absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat z-20 
+
+                        className={`absolute inset-0 overflow-hidden z-20 
                             ${isTransitioning ? 'animate-[slideIn_1s_ease-in-out]' : ''}`}
                     >
+                        <Image
+                            src={services[currentSlide]?.image}
+                            fill
+                            alt="Background"
+                            className="object-cover"
+                            priority // ← Ensures pre-loading (critical for above-the-fold images)
+                            quality={75} // ← Balances quality and performance
+                            sizes="100vw" // ← Responsive sizing hint
+                        />
                         {/* Responsive Content Container */}
-                        <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center md:max-w-[35%] lg:max-w-[50%] md:mx-5 md:my-30 md:sm:my-15 text-white`}>
-                            <div className={`${styles.title} text-[8vw] md:text-[75px] lg:text-[100px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
+                        <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center lg:max-w-[50%] md:mx-5 md:my-30 md:sm:my-15 text-white`}>
+                            <div className={`${styles.title} text-[8vw] md:text-[45px] lg:text-[100px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
                                 {services[currentSlide]?.title || ''}
                             </div>
                             <div className={`${styles.intro} text-[4vw] md:text-[10px] lg:text-[20px] uppercase font-bold leading-none`}>
                                 {services[currentSlide]?.sch || ''}
                             </div>
                             <div className={`${styles.desc} mt-[2vh] mb-[4vh] text-[4vw] md:text-[18px]`}>
-                                {services[currentSlide]?.desc || ''}
+                                {services[currentSlide]?.desc.length > 150 ? services[currentSlide]?.desc.slice(0, 150) + "..." : services[currentSlide]?.desc || ''}
                             </div>
                             <div className={`${styles.btn} ml-[5px]`}>
                                 <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
@@ -145,8 +171,8 @@ export default function Services() {
                                     }}
                                     onClick={() => changeSlide(services.findIndex(service => service.image === item.image))}
                                     className={`flex-shrink-0 w-[12vw] h-[12vw] min-w-[50px] min-h-[50px] md:w-[70px] md:h-[70px] rounded-full shadow-[0_3px_10px_rgba(0,0,0,0.3)] bg-cover bg-center bg-no-repeat cursor-pointer transform transition-all duration-300 hover:scale-110 hover:opacity-100
-                                        ${index === 0 ? 
-                                            'border-4 border-white scale-110 opacity-100' : 
+                                        ${index === 0 ?
+                                            'border-4 border-white scale-110 opacity-100' :
                                             'opacity-80 border-2 border-transparent'}`}
                                 />
                             ))}
@@ -168,7 +194,7 @@ export default function Services() {
             </div>
 
             {/* Animation Styles */}
-            <style jsx global>{`
+            <style>{`
                 @keyframes slideIn {
                     0% { opacity: 0.8; transform: translateX(20px); }
                     100% { opacity: 1; transform: translateX(0); }

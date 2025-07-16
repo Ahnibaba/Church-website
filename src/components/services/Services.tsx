@@ -123,7 +123,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="h-[100dvh] font-roboto bg-black"> {/* Changed to dvh for dynamic viewport */}
+        <section className="w-full h-[50vh] md:h-[100vh] font-roboto bg-black"> {/* Changed to dvh for dynamic viewport */}
             <div className="h-full">
                 <div className="relative h-full w-full -mt-[50px] overflow-hidden bg-black">
                     {/* Current Active Slide with Animation */}

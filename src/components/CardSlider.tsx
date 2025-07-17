@@ -59,7 +59,7 @@ export const CardSlider = () => {
     
     if (sliderRef.current) {
       const slideAmount = 100 / (cardsToShow + 1) // Slide by fraction of container
-      sliderRef.current.style.transition = 'transform 0.4s ease-in-out'
+      sliderRef.current.style.transition = 'transform 0.4s ease-in'
       sliderRef.current.style.transform = `translateX(-${direction === 'next' ? slideAmount : -slideAmount}%)`
     }
 
@@ -93,7 +93,7 @@ export const CardSlider = () => {
           <div 
             ref={sliderRef}
             className="flex gap-4"
-
+            // style={{ width: `${(districtLength * 100) / cardsToShow}%` }}
           >
             {visibleCards.map((item, index) => (
               <div
@@ -102,7 +102,7 @@ export const CardSlider = () => {
                   cardsToShow === 3 ? 'lg:w-1/3 md:w-1/2 w-full' : 
                   cardsToShow === 2 ? 'md:w-1/2 w-full' : 
                   'w-full'
-                } p-2`}
+                } p-2 transition-all duration-300`}
               >
                 <div className="flex flex-col items-center justify-center p-5 border border-gray-200 shadow-lg bg-white rounded-lg h-full">
                   <div className="flex flex-col items-center justify-center px-5 lg:px-10 py-0 mb-8 lg:mb-12">

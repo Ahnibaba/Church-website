@@ -1,5 +1,5 @@
 "use client"
-import { useCallback, useState, useEffect } from "react"
+import { useCallback, useState, useEffect, useRef } from "react"
 import { districtData } from "./districts/districtData"
 import Link from "next/link"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
@@ -8,6 +8,8 @@ export const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [cardsToShow, setCardsToShow] = useState(1)
   const [ready, setReady] = useState(false)
+  const [isTransitioning, setIsTransitioning] = useState(false)
+  const sliderRef = useRef<HTMLDivElement>(null)
   const districtLength = districtData.length
 
   // Update cards to show based on screen size
@@ -45,27 +47,59 @@ export const CardSlider = () => {
     return districtData.slice(start, end)
   }
 
+  const animateSlide = (direction: 'next' | 'prev') => {
+    setIsTransitioning(true)
+    
+    if (sliderRef.current) {
+      sliderRef.current.style.transition = 'transform 0.5s ease-in-out'
+      
+      if (direction === 'next') {
+        sliderRef.current.style.transform = `translateX(-${100 / cardsToShow}%)`
+      } else {
+        sliderRef.current.style.transform = `translateX(${100 / cardsToShow}%)`
+      }
+    }
+
+    setTimeout(() => {
+      if (sliderRef.current) {
+        sliderRef.current.style.transition = 'none'
+        sliderRef.current.style.transform = 'translateX(0)'
+      }
+      
+      if (direction === 'next') {
+        setCurrentIndex(prev => prev >= districtLength - 1 ? 0 : prev + 1)
+      } else {
+        setCurrentIndex(prev => prev === 0 ? districtLength - 1 : prev - 1)
+      }
+      
+      setIsTransitioning(false)
+    }, 500)
+  }
+
   const nextSlide = useCallback(() => {
-    setCurrentIndex(prev => 
-      prev >= districtLength - 1 ? 0 : prev + 1
-    )
-  }, [districtLength])
+    if (!isTransitioning) {
+      animateSlide('next')
+    }
+  }, [districtLength, isTransitioning, cardsToShow, animateSlide])
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex(prev => 
-      prev === 0 ? districtLength - 1 : prev - 1
-    )
-  }, [districtLength])
+    if (!isTransitioning) {
+      animateSlide('prev')
+    }
+  }, [districtLength, isTransitioning, cardsToShow, animateSlide])
 
   const visibleCards = getVisibleCards()
 
-  if(!ready) return 
+  if (!ready) return null
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative py-8">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="relative overflow-hidden">
-          <div className="flex gap-4 transition-transform duration-300 ease-in-out">
+        <div className="relative overflow-hidden bg-blue-600">
+          <div 
+            ref={sliderRef}
+            className="flex gap-4"
+          >
             {visibleCards.map((item, index) => (
               <div
                 key={`${currentIndex}-${index}`}
@@ -107,13 +141,13 @@ export const CardSlider = () => {
         <>
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 hover:scale-110 transition-transform"
           >
             <IoIosArrowBack size={15} />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 hover:scale-110 transition-transform"
           >
             <IoIosArrowForward size={15} />
           </button>

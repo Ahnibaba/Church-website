@@ -7,11 +7,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 export const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [cardsToShow, setCardsToShow] = useState(1)
+  const [ready, setReady] = useState(false)
   const districtLength = districtData.length
 
   // Update cards to show based on screen size
   useEffect(() => {
     const updateCardsToShow = () => {
+      setReady(true)
       if (window.innerWidth >= 1024) {
         setCardsToShow(3)
       } else if (window.innerWidth >= 768) {
@@ -56,6 +58,8 @@ export const CardSlider = () => {
   }, [districtLength])
 
   const visibleCards = getVisibleCards()
+
+  if(!ready) return 
 
   return (
     <div className="w-full relative">

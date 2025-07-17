@@ -5,16 +5,21 @@ import { Logo } from "@/components/Logo"
 import { useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { IoMdClose } from "react-icons/io"
+import { usePathname } from "next/navigation"
 
 export const Navbar = () => {
     const [navDrawerOpen, setNavDrawerOpen] = useState<boolean>(false)
+
+    const pathname = usePathname()
+    console.log(pathname);
+    
 
     const toggleNavDrawer = () => {
         setNavDrawerOpen((prev) => (!prev))
     }
     return (
         <>
-            <nav className="md:mr-[15px] flex justify-between items-center mb-12">
+            <nav className={`md:mr-[15px] flex justify-between items-center ${pathname === "/" && "mb-12"}`}>
                 <div>
                     <Link href="/">
                         <Logo />

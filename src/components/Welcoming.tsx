@@ -11,19 +11,19 @@ type WelcomeCard = {
 export const Welcoming = () => {
   const welcomingData: WelcomeCard[] = [
     {
-      image: "/church1.jpg",
+      image: "/worship.jpg",
       title: "SUNDAY SCHOOL",
       desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "about"
     },
     {
-      image: "/church2.jpg",
+      image: "/worship2.jpg",
       title: "YOUTH CHURCH",
       desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "youth"
     },
     {
-      image: "/church3.jpg",
+      image: "/worship3.jpg",
       title: "TEENS CHURCH",
       desc: "I{&apos;}m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
       link: "teens"

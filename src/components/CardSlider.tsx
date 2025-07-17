@@ -23,6 +23,8 @@ export const CardSlider = () => {
       } else {
         setCardsToShow(1)
       }
+      // Reset current index when screen size changes
+      setCurrentIndex(0)
     }
 
     updateCardsToShow()
@@ -30,34 +32,35 @@ export const CardSlider = () => {
     return () => window.removeEventListener("resize", updateCardsToShow)
   }, [])
 
-  // Calculate visible cards with padding for smooth transitions
+  // Get visible cards plus one extra for smooth transition
   const getVisibleCards = () => {
-    const start = currentIndex
-    const end = start + cardsToShow
+    const cards = []
+    // Show current cards plus one extra for the transition
+    const end = Math.min(currentIndex + cardsToShow + 1, districtLength)
     
-    // If we're near the end, include some from the beginning
-    if (end > districtLength) {
-      const overflow = end - districtLength
-      return [
-        ...districtData.slice(start),
-        ...districtData.slice(0, overflow)
-      ]
+    for (let i = currentIndex; i < end; i++) {
+      cards.push(districtData[i])
     }
     
-    return districtData.slice(start, end)
+    // If we're at the end, wrap around
+    if (end === districtLength && cards.length < cardsToShow + 1) {
+      const needed = cardsToShow + 1 - cards.length
+      for (let i = 0; i < needed; i++) {
+        cards.push(districtData[i])
+      }
+    }
+    
+    return cards
   }
 
   const animateSlide = (direction: 'next' | 'prev') => {
+    if (isTransitioning) return
     setIsTransitioning(true)
     
     if (sliderRef.current) {
-      sliderRef.current.style.transition = 'transform 0.5s ease-in-out'
-      
-      if (direction === 'next') {
-        sliderRef.current.style.transform = `translateX(-${100 / cardsToShow}%)`
-      } else {
-        sliderRef.current.style.transform = `translateX(${100 / cardsToShow}%)`
-      }
+      const slideAmount = 100 / (cardsToShow + 1) // Slide by fraction of container
+      sliderRef.current.style.transition = 'transform 0.4s ease-in-out'
+      sliderRef.current.style.transform = `translateX(-${direction === 'next' ? slideAmount : -slideAmount}%)`
     }
 
     setTimeout(() => {
@@ -66,27 +69,18 @@ export const CardSlider = () => {
         sliderRef.current.style.transform = 'translateX(0)'
       }
       
-      if (direction === 'next') {
-        setCurrentIndex(prev => prev >= districtLength - 1 ? 0 : prev + 1)
-      } else {
-        setCurrentIndex(prev => prev === 0 ? districtLength - 1 : prev - 1)
-      }
+      setCurrentIndex(prev => 
+        direction === 'next' 
+          ? (prev >= districtLength - 1 ? 0 : prev + 1)
+          : (prev === 0 ? districtLength - 1 : prev - 1)
+      )
       
       setIsTransitioning(false)
-    }, 500)
+    }, 400)
   }
 
-  const nextSlide = useCallback(() => {
-    if (!isTransitioning) {
-      animateSlide('next')
-    }
-  }, [districtLength, isTransitioning, cardsToShow, animateSlide])
-
-  const prevSlide = useCallback(() => {
-    if (!isTransitioning) {
-      animateSlide('prev')
-    }
-  }, [districtLength, isTransitioning, cardsToShow, animateSlide])
+  const nextSlide = useCallback(() => animateSlide('next'), [animateSlide])
+  const prevSlide = useCallback(() => animateSlide('prev'), [animateSlide])
 
   const visibleCards = getVisibleCards()
 
@@ -95,21 +89,22 @@ export const CardSlider = () => {
   return (
     <div className="w-full relative py-8">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="relative overflow-hidden bg-blue-600">
+        <div className="relative overflow-hidden">
           <div 
             ref={sliderRef}
             className="flex gap-4"
+
           >
             {visibleCards.map((item, index) => (
               <div
                 key={`${currentIndex}-${index}`}
                 className={`flex-shrink-0 ${
-                  cardsToShow === 3 ? 'w-1/3' : 
-                  cardsToShow === 2 ? 'w-1/2' : 
+                  cardsToShow === 3 ? 'lg:w-1/3 md:w-1/2 w-full' : 
+                  cardsToShow === 2 ? 'md:w-1/2 w-full' : 
                   'w-full'
                 } p-2`}
               >
-                <div className="flex flex-col items-center justify-center p-5 border border-gray-200 bg-white rounded-lg h-full">
+                <div className="flex flex-col items-center justify-center p-5 border border-gray-200 shadow-lg bg-white rounded-lg h-full">
                   <div className="flex flex-col items-center justify-center px-5 lg:px-10 py-0 mb-8 lg:mb-12">
                     <h1 className="font-light uppercase font-playFair text-2xl tracking-wider text-gray-700">
                       {item.name || "Heading"}

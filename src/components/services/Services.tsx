@@ -78,7 +78,7 @@ export default function Services({ services, designation }: ServicesProps) {
     ];
 
     return (
-        <section className="w-full h-[50vh] md:h-[100vh] font-roboto bg-black">
+        <section className="w-full h-[68vh] md:h-[100vh] font-roboto bg-black">
             <div className="h-full">
                 <div className="relative h-full w-full -mt-[50px] overflow-hidden">
                     {/* Background Slide (always visible) */}
@@ -104,14 +104,14 @@ export default function Services({ services, designation }: ServicesProps) {
                             quality={75}
                             sizes="100vw"
                         />
-                        <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center lg:max-w-[50%] md:mx-5 md:my-30 md:sm:my-15 text-white`}>
-                            <div className={`${styles.title} text-[8vw] md:text-[45px] lg:text-[100px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
+                        <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center lg:max-w-[70vw] md:mx-5 md:my-30 md:sm:my-15 text-white`}>
+                            <div className={`${styles.title} text-[28px] md:text-[45px] lg:text-[75px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
                                 {services[currentSlide]?.title || ''}
                             </div>
-                            <div className={`${styles.intro} text-[4vw] md:text-[10px] lg:text-[20px] uppercase font-bold leading-none`}>
+                            <div className={`${styles.intro} text-[15px] md:text-[25px] lg:text-[35px] uppercase font-bold leading-none`}>
                                 {services[currentSlide]?.sch || ''}
                             </div>
-                            <div className={`${styles.desc} mt-[2vh] mb-[4vh] text-[4vw] md:text-[18px]`}>
+                            <div className={`${styles.desc} mt-[2vh] mb-[4vh] text-[15px] md:text-[15px] lg:text-[20px]`}>
                                 {services[currentSlide]?.desc && services[currentSlide]?.desc.length > 150 ? 
                                     `${services[currentSlide]?.desc.slice(0, 150)}...` : 
                                     services[currentSlide]?.desc || ''}

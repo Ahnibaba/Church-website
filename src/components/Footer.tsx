@@ -10,7 +10,7 @@ export const Footer = () => {
                     <div className="w-full flex flex-col md:flex-row gap-8 mb-12">
                         {/* About Section */}
                         <div className="flex-1">
-                            <h1 className="font-light uppercase text-2xl tracking-wider mb-5">ABOUT US</h1>
+                            <h1 className="font-light uppercase text-xl tracking-wider mb-5">ABOUT US</h1>
                             <div className="max-w-xs mb-6">
                                 <p className="text-base">
                                     I&apos;m a paragraph. Click here to add your own text and edit me.
@@ -25,7 +25,7 @@ export const Footer = () => {
 
                         {/* Address Section */}
                         <div className="flex-1">
-                            <h1 className="font-light uppercase text-2xl tracking-wider mb-5">ADDRESS</h1>
+                            <h1 className="font-light uppercase text-xl tracking-wider mb-5">ADDRESS</h1>
                             <div className="mb-6 space-y-1">
                                 <p>500 Terry Francine Street</p>
                                 <p>San Francisco, CA 94158</p>
@@ -35,7 +35,7 @@ export const Footer = () => {
 
                         {/* Newsletter Section */}
                         <div className="flex-1">
-                            <h1 className="font-light uppercase text-2xl tracking-wider mb-5">SUBSCRIBE</h1>
+                            <h1 className="font-light uppercase text-xl tracking-wider mb-5">SUBSCRIBE</h1>
                             <div className="w-full space-y-4">
                                 <label htmlFor="email" className="block">Email</label>
                                 <div className="w-full h-12 border border-[#a39e9e] flex items-center px-3">

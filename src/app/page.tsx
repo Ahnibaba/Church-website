@@ -7,6 +7,7 @@ import { Welcoming } from "@/components/Welcoming"
 import { Metadata } from "next"
 import { services } from "@/components/services/services.data"
 import { sliderData } from "@/components/slider/sliderData"
+import District from "@/components/districts/District"
 
 
 
@@ -28,6 +29,7 @@ export default function Home() {
         <NextEvent />
         <Welcoming />
         <Services services={services} designation="services" />
+        <District />
         <Parallax />
      </>
    )

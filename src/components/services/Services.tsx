@@ -104,7 +104,7 @@ export default function Services({ services, designation }: ServicesProps) {
                             quality={75}
                             sizes="100vw"
                         />
-                        <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center lg:max-w-[70vw] md:mx-5 md:my-30 md:sm:my-15 text-white`}>
+                        <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center md:max-w-xl md:mx-5 md:my-30 md:sm:my-15 text-white`}>
                             <div className={`${styles.title} text-[28px] md:text-[45px] lg:text-[75px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
                                 {services[currentSlide]?.title || ''}
                             </div>
@@ -137,7 +137,7 @@ export default function Services({ services, designation }: ServicesProps) {
                                 quality={75}
                                 sizes="100vw"
                             />
-                            <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center lg:max-w-[50%] md:mx-5 md:my-30 md:sm:my-15 text-white`}>
+                            <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center md:max-w-xl md:mx-5 md:my-30 md:sm:my-15 text-white`}>
                                 <div className={`${styles.title} text-[8vw] md:text-[45px] lg:text-[100px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
                                     {services[nextSlideIndex]?.title || ''}
                                 </div>

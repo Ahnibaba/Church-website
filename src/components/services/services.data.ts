@@ -26,7 +26,7 @@ export const services = [
         desc: "The Worship Service is a time set apart to honor, adore, and exalt the name of the Lord in spirit and in truth. It is a gathering of believers to give God the glory due His name through songs, prayers, the Word, and heartfelt praise."
     },
     {
-        image: "/thanks.jpg",
+        image: "/gs5.jpg",
         title: "THANKS GIVING SERVICE",
         sch: "EVERY LAST SUNDAY OF THE MONTH",
         desc: " Come and express your heartfelt gratitude to God for His goodness, mercy, and faithfulness in our lives. It is a moment to honor the One who daily loads us with benefits and to publicly give thanks for all He has done."

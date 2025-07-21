@@ -15,7 +15,6 @@ export const Hero = ({ imageString }: { imageString: string }) => {
 
                 </p>
               </div>
-              <p></p>
 
            </div>
         </div>

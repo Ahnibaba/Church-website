@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export const About = () => {
     return (
@@ -15,6 +16,11 @@ export const About = () => {
                          Our mission is grounded in the responsibility of delivering sound doctrine, revealing the light of the Scriptures, and preaching the undiluted Word of God. As Jesus declared, “I must work the works of Him who sent me”—we continue in that divine path, fulfilling the Great Commission entrusted to us — Rev. Jack S. Jack.
                        </p>
                     </div>
+                    <button className="my-5 p-4 bg-[#d63037] rounded-lg text-white font-roboto font-bold">
+                      <Link href="/about-us">
+                         Read More
+                      </Link>
+                    </button>
                   </div>
                   <div className="flex max-[840px]:justify-end max-[450px]:justify-center">
                     <Image

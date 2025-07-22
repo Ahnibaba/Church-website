@@ -1,11 +1,11 @@
 import { About } from "@/components/about"
 import { NextEvent } from "@/components/nextEvent/NextEvent"
 import { Parallax } from "@/components/Parallex"
-import Services from "@/components/services/Services"
+import Services from "@/components/HeroAnimation/HeroAnimation"
 // import { Slider } from "@/components/slider/Slider"
 import { Welcoming } from "@/components/Welcoming"
 import { Metadata } from "next"
-import { services } from "@/components/services/services.data"
+import { services } from "@/components/services.data"
 import { sliderData } from "@/components/slider/sliderData"
 import District from "@/components/districts/District"
 
@@ -29,7 +29,7 @@ export default function Home() {
         components in each of their pages(services/hero) */}
         <Services data={sliderData} />
         <About />
-        <NextEvent />
+        <NextEvent type="Upcoming Events" />
         <Welcoming />
         <Services data={services} />
         <District />

@@ -1,4 +1,4 @@
-import { dataProps } from "./Services";
+import { dataProps } from "./HeroAnimation/HeroAnimation";
 
 export const services: dataProps[] = [
     {

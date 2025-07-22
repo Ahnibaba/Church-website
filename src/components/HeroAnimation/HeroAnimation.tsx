@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import styles from "./services.module.css"
+import styles from "./HeroAnimation.module.css"
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,12 +11,12 @@ interface TestimonyProps {
    id: number;
    title: string;
    desc: string;
-   images: [
+   images: Array<
      {
         id: number;
         image: string;
      }
-   ]
+   >
 }
 
 export interface dataProps {
@@ -30,12 +30,12 @@ export interface dataProps {
    heroImage?: string;
    heroWriteUp?: string;
    testimony?: [TestimonyProps],
-   excerptImages?: [
+   excerptImages?: Array<
       {
         id: number;
         image: string;
       }
-   ]
+   >
     
 }
 

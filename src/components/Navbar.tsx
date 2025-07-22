@@ -42,8 +42,8 @@ export const Navbar = () => {
                     <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                         Youth Ministry
                     </Link>
-                    <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                        Branch
+                    <Link href="/next-events" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                        Next Events
                     </Link>
                     
                 </div>
@@ -88,6 +88,9 @@ export const Navbar = () => {
                         <hr className="w-full text-gray-400" />
                         <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Branch
+                        </Link>
+                        <Link href="/next-events" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                            Next Events
                         </Link>
                         <hr className="w-full text-gray-400" />
                         <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">

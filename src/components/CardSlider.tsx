@@ -53,7 +53,7 @@ export const CardSlider = () => {
     return cards
   }
 
-  const animateSlide = (direction: 'next' | 'prev') => {
+  const animateSlide = useCallback((direction: 'next' | 'prev') => {
     if (isTransitioning) return
     setIsTransitioning(true)
     
@@ -77,7 +77,7 @@ export const CardSlider = () => {
       
       setIsTransitioning(false)
     }, 400)
-  }
+  }, [])
 
   const nextSlide = useCallback(() => animateSlide('next'), [animateSlide])
   const prevSlide = useCallback(() => animateSlide('prev'), [animateSlide])

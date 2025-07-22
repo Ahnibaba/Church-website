@@ -1,4 +1,4 @@
-import { dataProps } from "../services/Services";
+import { dataProps } from "../HeroAnimation/HeroAnimation";
 
 
 export const sliderData: dataProps[] = [

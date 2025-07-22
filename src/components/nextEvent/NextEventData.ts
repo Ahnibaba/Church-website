@@ -1,4 +1,4 @@
-import { dataProps } from "@/components/services/Services";
+import { dataProps } from "@/components/HeroAnimation/HeroAnimation";
 
 export const nextEventData: dataProps[] = [
   {
@@ -1117,19 +1117,30 @@ export const nextEventData: dataProps[] = [
     title: "God is Good Service",
     schedule: "",
     scripture: "",
-    desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    desc: `Goodness of God, let's come entering his gate with thanks giving, because he has been good to us and his Mer
+    cies are new every morning`,
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next8.jpg",
+    heroWriteUp: `
+      heroWriteUp: "GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     Come with a heart of expectation, and don't come alone — invite someone who needs a touch from God. Mark your calendar and be part of this life-changing experience. Because truly, God is good — all the time!"
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "each-next3.jpg"
           }
         ]
       }
@@ -1137,8 +1148,21 @@ export const nextEventData: dataProps[] = [
     excerptImages: [
       {
         id: 1,
-        image: ""
-      }
+        image: "each-next7.jpg"
+      },
+      {
+        id: 2,
+        image: "each-next4.jpg"
+      },
+      {
+        id: 1,
+        image: "each-next6.jpg"
+      },
+      {
+        id: 1,
+        image: "each-next5.jpg"
+      },
+      
     ]
   },
   {

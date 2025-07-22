@@ -4,20 +4,21 @@ import { nextEventData } from "./NextEventData"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { useCallback, useState } from "react"
 import { getDayName, getMonthName } from "@/utils/GetDate"
+import { dataProps } from "../services/Services"
+
+
 
 type MonthObj = {
     name: string
     abbrev: string
 }
 
-type EventObj = {
-    date: string
-    title: string
-    description: string
-}
+type EventObj = dataProps
 
 export const NextEvent = () => {
     const [currentSlide, setCurrentSlide] = useState<number>(0)
+
+
 
     // Date formatting helpers
     const getDate = (date: string): number => new Date(date).getDate()
@@ -40,13 +41,20 @@ export const NextEvent = () => {
     }
 
     // Filter upcoming events (max 3)
-    const eventsArray: EventObj[] = []
+    const eventsArray: dataProps[] = []
     let limit = 0
 
     for (let i = 0; i < nextEventData.length; i++) {
-        if (new Date(nextEventData[i].date) > new Date() && limit < 3 || new Date(nextEventData[i].date) === new Date() && limit < 3) {
-            eventsArray.push(nextEventData[i])
-            limit += 1
+        const eventDate = nextEventData[i].date;
+        const eventDateObj = eventDate ? new Date(eventDate) : null;
+
+        if (!eventDateObj) continue;
+
+        const currentDate = new Date();
+
+        if ((eventDateObj > currentDate || eventDateObj.toDateString() === currentDate.toDateString()) && limit < 3) {
+            eventsArray.push(nextEventData[i]);
+            limit += 1;
         }
     }
 
@@ -74,22 +82,24 @@ export const NextEvent = () => {
                 }
       `}
         >
-            <div className="flex flex-col items-center justify-center px-5 lg:px-10 py-0 mb-8 lg:mb-12">
-                <h1 className="font-light uppercase font-playFair text-4xl tracking-wider text-gray-700">
-                    {getDate(item.date)}/{getMonth(item.date).abbrev}
-                </h1>
-                <div className="mt-6 lg:mt-12 flex flex-col items-center justify-center font-roboto text-gray-800 w-full">
-                    <div className="flex flex-col items-center justify-center">
-                        <p className="font-bold text-center line-clamp-2">
-                            {item.title}: {item.description.slice(0, 30)}...
-                        </p>
-                        <p className="text-sm mt-2 text-gray-600 whitespace-nowrap">
-                         {getDay(item.date)}, {getMonth(item.date).name} {getDate(item.date)} at {getTime(item.date)}
-                      </p>
+            {item.date && (
+                <div className="flex flex-col items-center justify-center px-5 lg:px-10 py-0 mb-8 lg:mb-12">
+                    <h1 className="font-light uppercase font-playFair text-4xl tracking-wider text-gray-700">
+                        {getDate(item.date)}/{getMonth(item.date).abbrev}
+                    </h1>
+                    <div className="mt-6 lg:mt-12 flex flex-col items-center justify-center font-roboto text-gray-800 w-full">
+                        <div className="flex flex-col items-center justify-center">
+                            <p className="font-bold text-center line-clamp-2">
+                                {item.title}: {item.desc && item.desc.slice(0, 30)}...
+                            </p>
+                            <p className="text-sm mt-2 text-gray-600 whitespace-nowrap">
+                                {getDay(item.date)}, {getMonth(item.date).name} {getDate(item.date)} at {getTime(item.date)}
+                            </p>
+                        </div>
+
                     </div>
-                    
                 </div>
-            </div>
+            )}
             <Link
                 href="/services"
                 className="flex items-center gap-1 uppercase tracking-tight text-xs text-[#d63037] hover:text-[#d63038b6] transition-colors"

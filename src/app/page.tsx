@@ -24,11 +24,14 @@ export default function Home() {
      <>
         
         {/* <Slider /> */}
-        <Services services={sliderData} designation="hero-slider" />
+        
+        {/* this props issue will be fixed because the heroAnimate will be an independent
+        components in each of their pages(services/hero) */}
+        <Services data={sliderData} />
         <About />
         <NextEvent />
         <Welcoming />
-        <Services services={services} designation="services" />
+        <Services data={services} />
         <District />
         <Parallax />
      </>

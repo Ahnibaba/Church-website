@@ -6,20 +6,46 @@ import styles from "./services.module.css"
 import Image from "next/image";
 import Link from "next/link";
 
-interface Service {
-    image: string;
-    title?: string;
-    sch?: string;
-    desc?: string;
-    verse?: string;
+
+interface TestimonyProps {
+   id: number;
+   title: string;
+   desc: string;
+   images: [
+     {
+        id: number;
+        image: string;
+     }
+   ]
 }
 
-interface ServicesProps {
-    services: Service[];
-    designation: string;
+export interface dataProps {
+   id: number; 
+   date?: string;
+   title?: string;
+   schedule?: string;
+   scripture?: string;
+   desc?: string;
+   displayImage: string;
+   heroImage?: string;
+   heroWriteUp?: string;
+   testimony?: [TestimonyProps],
+   excerptImages?: [
+      {
+        id: number;
+        image: string;
+      }
+   ]
+    
 }
 
-export default function Services({ services, designation }: ServicesProps) {
+
+interface HeroAnimationProps {
+  data: dataProps[]; // This is correct
+}
+
+
+export default function HeroAnimation({ data }: HeroAnimationProps) {
     const [currentSlide, setCurrentSlide] = useState<number>(0);
     const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
     const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
@@ -30,9 +56,9 @@ export default function Services({ services, designation }: ServicesProps) {
     useEffect(() => {
         let interval: NodeJS.Timeout;
 
-        if (isAutoPlaying && services.length > 0) {
+        if (isAutoPlaying && data.length > 0) {
             interval = setInterval(() => {
-                const nextIndex = currentSlide === services.length - 1 ? 0 : currentSlide + 1;
+                const nextIndex = currentSlide === data.length - 1 ? 0 : currentSlide + 1;
                 setNextSlideIndex(nextIndex);
                 setIsTransitioning(true);
                 setTimeout(() => {
@@ -46,10 +72,10 @@ export default function Services({ services, designation }: ServicesProps) {
         return () => {
             if (interval) clearInterval(interval);
         };
-    }, [isAutoPlaying, currentSlide, services]);
+    }, [isAutoPlaying, currentSlide, data]);
 
     const changeSlide = (index: number) => {
-        if (isTransitioning || index === currentSlide || services.length === 0) return;
+        if (isTransitioning || index === currentSlide || data.length === 0) return;
         setIsAutoPlaying(false);
         setNextSlideIndex(index);
         setIsTransitioning(true);
@@ -62,19 +88,19 @@ export default function Services({ services, designation }: ServicesProps) {
     };
 
     const nextSlide = () => {
-        if (services.length === 0) return;
-        changeSlide(currentSlide === services.length - 1 ? 0 : currentSlide + 1);
+        if (data.length === 0) return;
+        changeSlide(currentSlide === data.length - 1 ? 0 : currentSlide + 1);
     };
 
     const prevSlide = () => {
-        if (services.length === 0) return;
-        changeSlide(currentSlide === 0 ? services.length - 1 : currentSlide - 1);
+        if (data.length === 0) return;
+        changeSlide(currentSlide === 0 ? data.length - 1 : currentSlide - 1);
     };
 
     // Reorder thumbnails to show current slide first
     const orderedThumbnails = [
-        services[currentSlide],
-        ...services.filter((_, index: number) => index !== currentSlide)
+        data[currentSlide],
+        ...data.filter((_, index: number) => index !== currentSlide)
     ];
 
     return (
@@ -84,7 +110,7 @@ export default function Services({ services, designation }: ServicesProps) {
                     {/* Background Slide (always visible) */}
                     <div className="absolute inset-0 overflow-hidden z-0">
                         <Image
-                            src={services[displaySlide]?.image}
+                            src={data[displaySlide]?.displayImage}
                             fill
                             alt="Background"
                             className="object-cover"
@@ -97,7 +123,7 @@ export default function Services({ services, designation }: ServicesProps) {
                     {/* Current Active Slide with Animation */}
                     <div className={`absolute inset-0 overflow-hidden z-10 ${isTransitioning ? 'animate-[slideOut_1s_ease-in-out]' : ''}`}>
                         <Image
-                            src={services[currentSlide]?.image}
+                            src={data[currentSlide]?.displayImage}
                             fill
                             alt="Current Background"
                             className="object-cover"
@@ -106,19 +132,19 @@ export default function Services({ services, designation }: ServicesProps) {
                         />
                         <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center md:max-w-xl md:mx-5 md:my-30 md:sm:my-15 text-white`}>
                             <div className={`${styles.title} text-[28px] md:text-[45px] lg:text-[75px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
-                                {services[currentSlide]?.title || ''}
+                                {data[currentSlide]?.title || ''}
                             </div>
                             <div className={`${styles.intro} text-[15px] md:text-[25px] lg:text-[35px] uppercase font-bold leading-none`}>
-                                {services[currentSlide]?.sch || ''}
+                                {data[currentSlide]?.schedule || ''}
                             </div>
                             <div className={`${styles.desc} mt-[2vh] mb-[4vh] text-[15px] md:text-[15px] lg:text-[20px]`}>
-                                {services[currentSlide]?.desc && services[currentSlide]?.desc.length > 150 ? 
-                                    `${services[currentSlide]?.desc.slice(0, 150)}...` : 
-                                    services[currentSlide]?.desc || ''}
+                                {data[currentSlide]?.desc && data[currentSlide]?.desc.length > 150 ? 
+                                    `${data[currentSlide]?.desc.slice(0, 150)}...` : 
+                                   data[currentSlide]?.desc || ''}
                             </div>
-                            <div className={`${services[nextSlideIndex]?.verse === "" && "hidden"} ${styles.btn} ml-[5px]`}>
+                            <div className={` ${styles.btn} ml-[5px]`}>
                                 <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
-                                    {designation === "hero-slider" ? services[nextSlideIndex]?.verse : (
+                                    {data[nextSlideIndex]?.scripture  ? data[nextSlideIndex]?.scripture : (
                                         <Link href="/services">See More</Link>
                                     )}
                                 </button>
@@ -130,7 +156,7 @@ export default function Services({ services, designation }: ServicesProps) {
                     {isTransitioning && (
                         <div className={`absolute inset-0 overflow-hidden z-20 animate-[slideIn_1s_ease-in-out]`}>
                             <Image
-                                src={services[nextSlideIndex]?.image}
+                                src={data[nextSlideIndex]?.displayImage}
                                 fill
                                 alt="Next Background"
                                 className="object-cover"
@@ -139,19 +165,19 @@ export default function Services({ services, designation }: ServicesProps) {
                             />
                             <div className={`max-w-[90vw] mx-auto my-auto h-full flex flex-col justify-center md:max-w-xl md:mx-5 md:my-30 md:sm:my-15 text-white`}>
                                 <div className={`${styles.title} text-[8vw] md:text-[45px] lg:text-[100px] uppercase font-bold leading-none [text-shadow:3px_4px_4px_rgba(255,255,255,0.8)] opacity-100 animate-[animate_1s_ease-in-out_0.3s_1_forwards]`}>
-                                    {services[nextSlideIndex]?.title || ''}
+                                    {data[nextSlideIndex]?.title || ''}
                                 </div>
                                 <div className={`${styles.intro} text-[4vw] md:text-[10px] lg:text-[20px] uppercase font-bold leading-none`}>
-                                    {services[nextSlideIndex]?.sch || ''}
+                                    {data[nextSlideIndex]?.schedule || ''}
                                 </div>
                                 <div className={`${styles.desc} mt-[2vh] mb-[4vh] text-[4vw] md:text-[18px]`}>
-                                    {services[nextSlideIndex]?.desc && services[nextSlideIndex]?.desc.length > 150 ? 
-                                        `${services[nextSlideIndex]?.desc.slice(0, 150)}...` : 
-                                        services[nextSlideIndex]?.desc || ''}
+                                    {data[nextSlideIndex]?.desc && data[nextSlideIndex]?.desc.length > 150 ? 
+                                        `${data[nextSlideIndex]?.desc.slice(0, 150)}...` : 
+                                        data[nextSlideIndex]?.desc || ''}
                                 </div>
-                                <div className={`${services[nextSlideIndex]?.verse === "" && "hidden"} ${styles.btn} ml-[5px]`}>
+                                <div className={`${styles.btn} ml-[5px]`}>
                                     <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
-                                        {designation === "hero-slider" ? services[nextSlideIndex]?.verse : (
+                                        {data[nextSlideIndex]?.scripture  ? data[nextSlideIndex]?.scripture : (
                                             <Link href="/services">See More</Link>
                                         )}
                                     </button>
@@ -161,15 +187,15 @@ export default function Services({ services, designation }: ServicesProps) {
                     )}
 
                     {/* Thumbnail Slides - Responsive Layout */}
-                    {services.length > 1 && (
+                    {data.length > 1 && (
                         <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-row gap-2 z-30 px-2 py-1 w-full max-w-[95vw] overflow-x-auto scrollbar-hide md:right-4 md:left-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-0 md:w-auto md:max-h-[80vh] md:overflow-y-auto md:flex-col">
                             {orderedThumbnails.map((item, index) => (
                                 <div
                                     key={index}
                                     style={{
-                                        backgroundImage: `url(${item.image})`,
+                                        backgroundImage: `url(${item.displayImage})`,
                                     }}
-                                    onClick={() => changeSlide(services.findIndex((service: Service) => service.image === item.image))}
+                                    onClick={() => changeSlide(data.findIndex((data: dataProps) => data.displayImage === item.displayImage))}
                                     className={`flex-shrink-0 w-[12vw] h-[12vw] min-w-[50px] min-h-[50px] md:w-[70px] md:h-[70px] rounded-full shadow-[0_3px_10px_rgba(0,0,0,0.3)] bg-cover bg-center bg-no-repeat cursor-pointer transform transition-all duration-300 hover:scale-110 hover:opacity-100
                                         ${index === 0 ?
                                             'border-4 border-white scale-110 opacity-100' :
@@ -180,7 +206,7 @@ export default function Services({ services, designation }: ServicesProps) {
                     )}
 
                     {/* Navigation Arrows - Responsive Positioning */}
-                    {services.length > 0 && (
+                    {data.length > 0 && (
                         <div className={`absolute bottom-[12vh] md:bottom-auto md:top-[80%] right-[5%] w-[200px] max-w-[40%] flex gap-[5%] justify-center items-center z-30`}>
                             <button onClick={prevSlide} className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full bg-[#d63037] flex items-center justify-center text-white border-none outline-none text-base font-roboto font-bold transition-all duration-500 cursor-pointer hover:bg-white hover:text-black">
                                 <IoIosArrowBack />

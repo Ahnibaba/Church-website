@@ -104,7 +104,7 @@ export default function HeroAnimation({ data }: HeroAnimationProps) {
     ];
 
     return (
-        <section className="w-full h-[68vh] md:h-[100vh] font-roboto bg-black">
+        <section className="w-full h-[68vh] md:h-[100vh] font-roboto bg-black mt-36">
             <div className="h-full">
                 <div className="relative h-full w-full -mt-[50px] overflow-hidden">
                     {/* Background Slide (always visible) */}

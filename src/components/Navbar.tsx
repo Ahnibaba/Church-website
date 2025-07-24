@@ -89,6 +89,7 @@ export const Navbar = () => {
                         <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Branch
                         </Link>
+                        <hr className="w-full text-gray-400" />
                         <Link href="/next-events" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
                             Next Events
                         </Link>

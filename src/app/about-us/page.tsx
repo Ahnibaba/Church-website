@@ -10,7 +10,7 @@ export default function AboutUs() {
         <>
          <Hero imageString="./about-us.jpg" text={text} title={title} />
          <OptionalView />
-         <NextEvent type="Next Events" />
+         <NextEvent type="Upcoming Events" />
         </>
     )
 }

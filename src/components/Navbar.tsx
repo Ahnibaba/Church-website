@@ -19,7 +19,7 @@ export const Navbar = () => {
     }
     return (
         <>
-            <nav className={`md:mr-[15px] flex justify-between items-center fixed z-99 w-full bg-white pr-2 ${pathname === "/" && "mb-12"}`}>
+            <nav className={`md:mr-[15px] flex justify-between items-center fixed w-full bg-white pr-2`}>
                 <div>
                     <Link href="/">
                         <Logo />

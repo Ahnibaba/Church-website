@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero"
 import { nextEventData } from "@/components/nextEvent/NextEventData"
+import WriteupCard from "@/components/WriteupCard"
 
 export default async function NextEventPage({ params }: { 
     params: Promise<{ id: string }>
@@ -9,10 +10,13 @@ export default async function NextEventPage({ params }: {
 
     if (!event) return <h1>No Event</h1>
     return (
-        <Hero 
+        <div className="">
+            <Hero 
             imageString={event?.displayImage ?? ""} 
             title={event?.title ?? ""} 
             text={event?.desc ?? ""} 
         /> 
+        <WriteupCard />
+        </div>
     )
 }

@@ -8,6 +8,8 @@ export default async function NextEventPage({ params }: {
     const { id } = await params
     const event = nextEventData.find((item) => (item.id === Number(id)))
 
+
+
     if (!event) return <h1>No Event</h1>
     return (
         <div className="">
@@ -16,7 +18,7 @@ export default async function NextEventPage({ params }: {
             title={event?.title ?? ""} 
             text={event?.desc ?? ""} 
         /> 
-        <WriteupCard />
+        <WriteupCard writeupText={event?.heroWriteUp || ""} writeupTitle={event?.title || ""} writeupImage={event?.heroImage || ""} />
         </div>
     )
 }

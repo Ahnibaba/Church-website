@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero"
+import IterativeWriteupCard from "@/components/IterativeWriteupCard"
 import { nextEventData } from "@/components/nextEvent/NextEventData"
 import WriteupCard from "@/components/WriteupCard"
 
@@ -19,6 +20,7 @@ export default async function NextEventPage({ params }: {
             text={event?.desc ?? ""} 
         /> 
         <WriteupCard writeupText={event?.heroWriteUp || ""} writeupTitle={event?.title || ""} writeupImage={event?.heroImage || ""} />
+        <IterativeWriteupCard data={event.testimony} />
         </div>
     )
 }

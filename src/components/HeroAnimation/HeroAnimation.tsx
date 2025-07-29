@@ -29,7 +29,7 @@ export interface dataProps {
    displayImage: string;
    heroImage?: string;
    heroWriteUp?: string;
-   testimony?: [TestimonyProps],
+   testimony?: Array<TestimonyProps>,
    excerptImages?: Array<
       {
         id: number;

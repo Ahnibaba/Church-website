@@ -1124,8 +1124,7 @@ export const nextEventData: dataProps[] = [
     heroWriteUp: `
      GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
      Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
-     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
-     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
      
     `,
     testimony: [

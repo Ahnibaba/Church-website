@@ -19,7 +19,7 @@ export const Navbar = () => {
     }
     return (
         <>
-            <nav className={`md:mr-[15px] flex justify-between items-center fixed w-full bg-white pr-2`}>
+            <nav className={`md:mr-[15px] flex justify-between items-center fixed w-full bg-white pr-2 z-50 `}>
                 <div>
                     <Link href="/">
                         <Logo />
@@ -56,7 +56,7 @@ export const Navbar = () => {
 
             {/* Mobile Navigation */}
             <div className={`fixed min-[900px]:hidden top-0 left-0 w-3/4 sm:w-1/2 md:w-1/3 h-full bg-white shadow-lg transform
-            transition-transform duration-300 z-50 ${navDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            transition-transform duration-300 z-57 ${navDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
                 <div className="flex justify-between mb-5">
                       <Logo />

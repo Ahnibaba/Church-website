@@ -8,21 +8,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "My year of open doors",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -38,21 +93,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Making every crooked path straight services",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -68,21 +178,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "The great awakening",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -98,21 +263,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Encounter with Jesus service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -128,21 +348,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "The great awakening",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -158,21 +433,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Triumphant entry of the year",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -188,21 +518,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Restoration service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -218,21 +603,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Encounter the author and finisher",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -248,21 +688,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "God of Impossibilities",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -278,21 +773,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Revive us again",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -308,21 +858,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "My year of open doors",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -338,21 +943,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Making every crooked path straight services",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -368,21 +1028,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "The great awakening",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -398,21 +1113,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Encounter with Jesus service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -428,21 +1198,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "The great awakening",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -458,21 +1283,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Triumphant entry of the year",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -488,21 +1368,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Restoration service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -518,21 +1453,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Encounter the author and finisher",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -548,21 +1538,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "God of Impossibilities",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -578,21 +1623,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Revive us again",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -608,21 +1708,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Enter His gate with thanks giving",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -638,21 +1793,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "He will break the gate of brass and tore the bars of iron in asunder.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -668,21 +1878,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Praise ye the Lord for his goodness",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -698,51 +1963,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Let the little children come to me for such is the kingdom of Heaven.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
-    ],
-    excerptImages: [
+      },
       {
-        id: 1,
-        image: ""
-      }
-    ]
-  },
-  {
-    id: 25,
-    date: "Mon May 29 2025 19:40:16",
-    title: "God is Good Service",
-    schedule: "",
-    scripture: "",
-    desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
-    testimony: [
-      {
-        id: 1,
-        title: "",
-        desc: "",
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
-            id: 1,
-            image: ""
+            id: 2,
+            image: "/testi-2.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -758,21 +2048,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -788,21 +2133,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -818,21 +2218,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Celebrating God's Goodness",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -848,21 +2303,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Restoration service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -878,21 +2388,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Encounter the author and finisher",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -908,21 +2473,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "God of Impossibilities",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -938,21 +2558,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Revive us again",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -968,21 +2643,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Enter His gate with thanks giving",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -998,21 +2728,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "He will break the gate of brass and tore the bars of iron in asunder.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1028,21 +2813,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Praise ye the Lord for his goodness",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1058,21 +2898,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Let the little children come to me for such is the kingdom of Heaven.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1088,21 +2983,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1207,7 +3157,7 @@ export const nextEventData: dataProps[] = [
         id: 1,
         image: "each-next5.jpg"
       },
-      
+
     ]
   },
   {
@@ -1217,21 +3167,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Celebrating God's Goodness",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1247,21 +3252,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Restoration service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1277,21 +3337,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Divine Visitation",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1307,21 +3422,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "God of Impossibilities",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1337,21 +3507,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Revive us again",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1367,21 +3592,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Enter His gate with thanks giving",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1397,21 +3677,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "He will break the gate of brass and tore the bars of iron in asunder.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1427,21 +3762,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Praise ye the Lord for his goodness",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1457,21 +3847,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Let the little children come to me for such is the kingdom of Heaven.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1487,21 +3932,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1517,21 +4017,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1547,21 +4102,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Celebrating God's Goodness",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1577,21 +4187,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Restoration service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1607,21 +4272,76 @@ export const nextEventData: dataProps[] = [
     schedule: "",
     scripture: "",
     desc: "Thy light is here",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1635,21 +4355,76 @@ export const nextEventData: dataProps[] = [
     date: "Tue Oct 21 2025 19:40:16",
     title: "Possiblity Service",
     desc: "God of Impossibilities",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1663,21 +4438,76 @@ export const nextEventData: dataProps[] = [
     date: "Fri Oct 24 2025 19:40:16",
     title: "District Revival",
     desc: "Revive us again",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1691,21 +4521,76 @@ export const nextEventData: dataProps[] = [
     date: "Tue Nov 04 2025 19:40:16",
     title: "Glorious Service",
     desc: "Enter His gate with thanks giving",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1719,21 +4604,76 @@ export const nextEventData: dataProps[] = [
     date: "Sat Nov 15 2025 8:40:16",
     title: "Breakthrough Encounter Service",
     desc: "He will break the gate of brass and tore the bars of iron in asunder.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1747,21 +4687,76 @@ export const nextEventData: dataProps[] = [
     date: "Wed Nov 19 2025 12:40:16",
     title: "Jesus Network",
     desc: "Wonderful God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1775,21 +4770,76 @@ export const nextEventData: dataProps[] = [
     date: "Tue Nov 25 2025 19:40:16",
     title: "Powerful Children Conference",
     desc: "Let the little children come to me for such is the kingdom of Heaven.",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1803,21 +4853,76 @@ export const nextEventData: dataProps[] = [
     date: "Sat Nov 29 2025 19:40:16",
     title: "God is Good Service",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1831,21 +4936,76 @@ export const nextEventData: dataProps[] = [
     date: "Sun Nov 30 2025 19:40:16",
     title: "God is Good Service",
     desc: "Goodness of God",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1859,21 +5019,76 @@ export const nextEventData: dataProps[] = [
     date: "Fri Dec 1 2025 19:40:16",
     title: "Victory week",
     desc: "Celebrating God's birth",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1887,21 +5102,76 @@ export const nextEventData: dataProps[] = [
     date: "Mon Dec 15 2025 19:40:16",
     title: "Revival",
     desc: "Restoration service",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1915,21 +5185,76 @@ export const nextEventData: dataProps[] = [
     date: "Wed Dec 17 2025 19:40:16",
     title: "Jesus Network Service",
     desc: "Divine Visitation, Heark we heard",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1943,21 +5268,76 @@ export const nextEventData: dataProps[] = [
     date: "Sun Dec 21 2025 19:40:16",
     title: "Possiblity Service",
     desc: "God of Impossibilities",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1971,21 +5351,76 @@ export const nextEventData: dataProps[] = [
     date: "Wed Dec 24 2025 19:40:16",
     title: "District Revival",
     desc: "Revive us again",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {
@@ -1999,21 +5434,76 @@ export const nextEventData: dataProps[] = [
     date: "Thu 2025 19:40:16",
     title: "Jesus's Birth",
     desc: "Unto us a son is born",
-    displayImage: "",
-    heroImage: "",
-    heroWriteUp: "",
+    displayImage: "/presido.jpg",
+    heroImage: "/each-next7.jpg",
+    heroWriteUp: `
+     GOD IS GOOD SERVICE – A Divine Experience You Can’t Afford to Miss!
+     Join us for the "God is Good Service" — a power-packed encounter designed to refresh your spirit, ignite your faith, and leave you with a renewed sense of God’s goodness! This isn’t just another gathering; it’s a divine appointment with destiny.
+     Expect vibrant praise that will lift your heart, deep worship that ushers you into God’s presence, and spirit-filled ministrations that stir up your soul. The atmosphere will be alive with energy as we engage in soul-lifting concerts, transformative seminars, and powerful teachings from God’s Word that will leave you inspired and equipped for life.
+     Each session is uniquely designed to meet you at your point of need — whether you're longing for healing, direction, breakthrough, or just more of God. The "God is Good Service" is a celebration of His faithfulness, filled with joy, miracles, and undeniable testimonies.
+     
+    `,
     testimony: [
       {
         id: 1,
-        title: "",
-        desc: "",
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
         images: [
           {
             id: 1,
-            image: ""
+            image: "/testi-1.jpg"
           }
         ]
-      }
+      },
+      {
+        id: 2,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-2.jpg"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-3.jpg"
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: "Miraculous Open Doors",
+        desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+        images: [
+          {
+            id: 2,
+            image: "/testi-4.jpg"
+          }
+        ]
+      },
     ],
     excerptImages: [
       {

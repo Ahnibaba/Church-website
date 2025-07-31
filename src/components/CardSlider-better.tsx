@@ -50,7 +50,7 @@ export default function CardSlider({ data }: DataProps) {
     }
 
     const scroll = (direction: string) => {
-        const scrollAmount = direction === "left" ? -300 : 300
+        const scrollAmount = direction === "left" ? -370 : 370
         scrollRef.current?.scrollBy({ left: scrollAmount, behavior: "smooth" })
     }
 

@@ -8,6 +8,7 @@ import { dataProps } from "../HeroAnimation/HeroAnimation"
 
 
 
+
 type MonthObj = {
     name: string
     abbrev: string
@@ -23,6 +24,8 @@ export const NextEvent = ({ type }: { type: string }) => {
     const [scrollLeft, setScrollLeft] = useState<number>(0)
     const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false)
     const [canScrollRight, setCanScrollRight] = useState<boolean>(true)
+
+
 
     const handleMouseDown = (e: React.MouseEvent) => {
         setIsDragging(true)
@@ -47,7 +50,7 @@ export const NextEvent = ({ type }: { type: string }) => {
     }
 
     const scroll = (direction: string) => {
-        const scrollAmount = direction === "left" ? -300 : 300
+        const scrollAmount = direction === "left" ? -250 : 250
         scrollRef.current?.scrollBy({ left: scrollAmount, behavior: "smooth" })
     }
 
@@ -118,9 +121,21 @@ export const NextEvent = ({ type }: { type: string }) => {
     }, [arrayLength])
 
     // Event card component
-    const EventCard = ({ item, index }: { item: EventObj; index: number }) => (
-        <div
+    const EventCard = ({ item, index }: { item: EventObj; index: number }) => {
+
+        const handleCardClick = (e: React.MouseEvent) => {
+            // Prevent navigation if we're dragging
+            if (isDragging) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+        };
+
+        return (
+            <div
             key={index}
+            onClick={(e) => handleCardClick(e)}
             className={`
         flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 cursor-pointer
         p-5 border border-gray-200 rounded-lg 
@@ -159,7 +174,8 @@ export const NextEvent = ({ type }: { type: string }) => {
                 <span>{">>"}</span>
             </Link>
         </div>
-    )
+        )
+    }
 
     return (
         <section className={`w-full ${type === "Upcoming Events" ? "bg-[#D3CCBA]/20" : "bg-white"} py-12`}>
@@ -211,9 +227,9 @@ export const NextEvent = ({ type }: { type: string }) => {
                 {/* Scrollable Content */}
                 <div
                     ref={scrollRef}
-                    className={`min-[769px]:hidden container w-[30rem] sm:w-full mx-auto overflow-x-scroll flex space-x-6 relative py-7 my-12
-            ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
-                    onMouseDown={handleMouseDown}
+                    className={`min-[769px]:hidden container mx-auto overflow-x-scroll flex space-x-6 relative py-7 my-12
+                    ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                    onPointerDown={handleMouseDown}
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUpOrLeave}
                     onMouseLeave={handleMouseUpOrLeave}

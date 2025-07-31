@@ -56,7 +56,7 @@ export default function DistrictSlider({ data }: DistrictProps) {
     }
 
     const scroll = (direction: string) => {
-        const scrollAmount = direction === "left" ? -300 : 300
+        const scrollAmount = direction === "left" ? -320 : 320
         scrollRef.current?.scrollBy({ left: scrollAmount, behavior: "smooth" })
     }
 
@@ -107,7 +107,7 @@ export default function DistrictSlider({ data }: DistrictProps) {
             {/* Scrollable Content */}
             <div
                 ref={scrollRef}
-                className={`container w-[23rem] sm:w-full mx-auto overflow-x-scroll flex space-x-6 relative py-5
+                className={`container w-[20rem] sm:w-full mx-auto overflow-x-scroll flex space-x-6 relative py-5
             ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}

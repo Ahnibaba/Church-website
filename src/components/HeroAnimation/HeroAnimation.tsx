@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-interface TestimonyProps {
+export interface TestimonyProps {
    id: number;
    title: string;
    desc: string;
@@ -29,7 +29,7 @@ export interface dataProps {
    displayImage: string;
    heroImage?: string;
    heroWriteUp?: string;
-   testimony?: Array<TestimonyProps>,
+   testimony?: TestimonyProps[],
    excerptImages?: Array<
       {
         id: number;
@@ -40,12 +40,12 @@ export interface dataProps {
 }
 
 
-interface HeroAnimationProps {
+export interface DataProps {
   data: dataProps[]; // This is correct
 }
 
 
-export default function HeroAnimation({ data }: HeroAnimationProps) {
+export default function HeroAnimation({ data }: DataProps) {
     const [currentSlide, setCurrentSlide] = useState<number>(0);
     const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
     const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);

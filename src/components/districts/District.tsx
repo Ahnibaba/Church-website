@@ -1,4 +1,6 @@
-import { CardSlider } from "../CardSlider";
+import { districtData } from "./districtData";
+import DistrictSlider from "./DistrictSlider";
+
 
 
 
@@ -12,13 +14,13 @@ export default function District() {
                     DISTRICTS
                 </h1>
             </div>
-            <div className="w-full max-w-3xl mb-12">
+            <div className="w-full max-w-3xl">
                 <p className="text-center font-roboto text-gray-700">
                     We are closer than you think—come worship with us at a district near you. Experience heartfelt fellowship, uplifting praise, and the undiluted Word of God. Wherever you are, there&apos;s a place for you in His presence.
                 </p>
             </div>
 
-            <CardSlider />
+            <DistrictSlider data={districtData} />
 
         </div>
     )

@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { nextEventData } from "./NextEventData"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
-import { useCallback, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { getDayName, getMonthName } from "@/utils/GetDate"
 import { dataProps } from "../HeroAnimation/HeroAnimation"
 
@@ -16,7 +16,53 @@ type MonthObj = {
 type EventObj = dataProps
 
 export const NextEvent = ({ type }: { type: string }) => {
-    const [currentSlide, setCurrentSlide] = useState<number>(0)
+
+    const scrollRef = useRef<HTMLDivElement>(null)
+    const [isDragging, setIsDragging] = useState<boolean>(false)
+    const [startX, setStartX] = useState<number>(0)
+    const [scrollLeft, setScrollLeft] = useState<number>(0)
+    const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false)
+    const [canScrollRight, setCanScrollRight] = useState<boolean>(true)
+
+    const handleMouseDown = (e: React.MouseEvent) => {
+        setIsDragging(true)
+        if (scrollRef.current) {
+            setStartX(e.pageX - scrollRef.current.offsetLeft)
+            setScrollLeft(scrollRef.current.scrollLeft ?? 0)
+        }
+    }
+
+    const handleMouseMove = (e: React.MouseEvent) => {
+        if (!isDragging) return
+        if (scrollRef.current) {
+            const x = e.pageX - scrollRef.current.offsetLeft
+            const walk = x - startX
+            scrollRef.current.scrollLeft = scrollLeft - walk
+        }
+
+    }
+
+    const handleMouseUpOrLeave = () => {
+        setIsDragging(false)
+    }
+
+    const scroll = (direction: string) => {
+        const scrollAmount = direction === "left" ? -300 : 300
+        scrollRef.current?.scrollBy({ left: scrollAmount, behavior: "smooth" })
+    }
+
+    //Update Scroll Buttons
+    const updateScrollButtons = () => {
+        const container = scrollRef.current
+        if (container) {
+            const leftScroll = container.scrollLeft
+            const rightScrollable = container.scrollWidth > (leftScroll + container.clientWidth) || leftScroll === 0 && container.scrollWidth === (leftScroll | + container.clientWidth)
+            setCanScrollLeft(leftScroll > 0)
+            setCanScrollRight(rightScrollable)
+        }
+    }
+
+
 
 
 
@@ -60,12 +106,15 @@ export const NextEvent = ({ type }: { type: string }) => {
 
     // Slide navigation
     const arrayLength = type === "Upcoming Events" ? eventsArray.length : nextEventData.length
-    const nextSlide = useCallback(() => {
-        setCurrentSlide(prev => (prev === arrayLength - 1 ? 0 : prev + 1))
-    }, [arrayLength])
 
-    const prevSlide = useCallback(() => {
-        setCurrentSlide(prev => (prev === 0 ? arrayLength - 1 : prev - 1))
+    useEffect(() => {
+        const container = scrollRef.current
+        if (container) {
+            container.addEventListener("scroll", updateScrollButtons)
+            updateScrollButtons()
+
+            return () => container.removeEventListener("scroll", updateScrollButtons)
+        }
     }, [arrayLength])
 
     // Event card component
@@ -123,7 +172,7 @@ export const NextEvent = ({ type }: { type: string }) => {
                 </div>
 
                 {/* Desktop Grid View */}
-                <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                <div className="hidden min-[769px]:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                     {type === "Next Events" && (
                         nextEventData.map((item, index) => (
                             <EventCard key={index} item={item} index={index} />
@@ -138,51 +187,49 @@ export const NextEvent = ({ type }: { type: string }) => {
                 </div>
 
                 {/* Mobile Carousel */}
-                <div className="md:hidden relative">
-                    <div className="relative h-96 overflow-hidden">
-                        {type === "Next Events" && (
-                            nextEventData.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                                        }`}
-                                >
-                                    <EventCard item={item} index={index} />
-                                </div>
-                            ))
-                        )}
-                        {type === "Upcoming Events" && (
-                            eventsArray.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                                        }`}
-                                >
-                                    <EventCard item={item} index={index} />
-                                </div>
-                            ))
-                        )}
-                    </div>
+                <div className="container mx-auto text-center mb-10 relative">
 
-                    {/* Navigation Arrows */}
-                    {arrayLength > 1 && (
-                        <>
-                            <button
-                                onClick={prevSlide}
-                                className="absolute left-1 top-1/2 -translate-y-1/2 rounded-full border-2 border-gray-600 bg-white/80 text-gray-600 size-6 flex items-center justify-center cursor-pointer z-20 hover:bg-white transition-all"
-                                aria-label="Previous event"
-                            >
-                                <IoIosArrowBack size={15} />
-                            </button>
-                            <button
-                                onClick={nextSlide}
-                                className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full border-2 border-gray-600 bg-white/80 text-gray-600 size-6 flex items-center justify-center cursor-pointer z-20 hover:bg-white transition-all"
-                                aria-label="Next event"
-                            >
-                                <IoIosArrowForward size={15} />
-                            </button>
-                        </>
+                    {/* Scroll Button */}
+                    <div className="min-[769px]:hidden absolute right-0 sm:bottom-[-28px] bottom-[-30px] z-46 flex space-x-2">
+                        <button
+                            onClick={() => scroll("left")}
+                            disabled={!canScrollLeft}
+                            className={`p-[2px] sm:p-[5px] rounded-full border-2 border-white ${canScrollLeft ? "bg-[#d63037] text-white " : "bg-red-100 text-white cursor-not-allowed"}`}
+                        >
+                            <IoIosArrowBack className="text-2xl" />
+                        </button>
+                        <button
+                            onClick={() => scroll("right")}
+                            disabled={!canScrollRight}
+                            className={`p-[2px] sm:p-[5px] rounded-full border-2 border-white ${canScrollRight ? "bg-[#d63037] text-white" : "bg-red-100 text-white cursor-not-allowed"}`}
+                        >
+                            <IoIosArrowForward className="text-2xl" />
+                        </button>
+                    </div>
+                </div>
+
+                {/* Scrollable Content */}
+                <div
+                    ref={scrollRef}
+                    className={`min-[769px]:hidden container w-[30rem] sm:w-full mx-auto overflow-x-scroll flex space-x-6 relative py-7 my-12
+            ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+                    onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUpOrLeave}
+                    onMouseLeave={handleMouseUpOrLeave}
+                >
+                    {type === "Next Events" && (
+                        nextEventData.map((item, index) => (
+                            <EventCard key={index} item={item} index={index} />
+                        ))
                     )}
+
+                    {type === "Upcoming Events" && (
+                        eventsArray.map((item, index) => (
+                            <EventCard key={index} item={item} index={index} />
+                        ))
+                    )}
+
                 </div>
             </div>
         </section>

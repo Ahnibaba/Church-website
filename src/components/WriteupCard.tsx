@@ -17,7 +17,7 @@ export default function WriteupCard({ writeupText, writeupTitle, writeupImage }:
 
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center bg-[#D3CCBA]/20 my-5 sm:my-15 border-2 border-gray-300 max-w-[1920px]">
         <div className="flex items-center justify-center p-5 sm:p-10 order-2 lg:order-1">
-          <p className="text-gray-600 text-base max-[961px]:text-start">
+          <p className="text-gray-600 text-base sm:text-lg text-center sm:text-left font-roboto leading-relaxed">
             {writeupText}
           </p>  
         </div>

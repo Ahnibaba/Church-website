@@ -83,7 +83,7 @@ export const NavSection = ({ navs, show, setShow, navSectionMenu }: navSectionPr
           {hoverData[activeIndex].content.map((item, index) => (
             <div key={index} className="hover:bg-[#F8F8F9] py-1 px-2 rounded-[10px]">
               <div className="flex flex-row max-w-[300px] items-center justify-between gap-[20px] py-[20px]">
-                <Link className="text-gray-700" href={`ministries/${item.trim().toLocaleLowerCase()}`}>
+                <Link className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap" href={`ministries/${item.toLocaleLowerCase().replace(" ", "-")}`}>
                    {item}
                 </Link>
               </div>

@@ -2,21 +2,45 @@
 
 import Link from "next/link"
 import { Logo } from "@/components/Logo"
-import { useState } from "react"
+import React, { useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx"
-import { IoMdClose } from "react-icons/io"
-import { usePathname } from "next/navigation"
+import { navs, NavSection } from "./NavSection"
+import { MobileNavbar } from "./MobileNavbar"
 
 export const Navbar = () => {
-    const [navDrawerOpen, setNavDrawerOpen] = useState<boolean>(false)
 
-    const pathname = usePathname()
-    console.log(pathname);
-    
+    const [show, setShow] = useState<boolean>(false)
+    const [navs, setNavs] = useState<navs>({
+        "Home": false,
+        "About Us": false,
+        "Services": false,
+        "Sunday School": false,
+        "Next Events": false,
+        "Ministries": false
+
+    })
+    const [navDrawerOpen, setNavDrawerOpen] = useState<boolean>(false)
 
     const toggleNavDrawer = () => {
         setNavDrawerOpen((prev) => (!prev))
     }
+
+    const toggleNav = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        setShow(true)
+        const target = e.target as HTMLAnchorElement
+        console.log(target.innerText);
+
+        setNavs({
+            "Home": "HOME" === target.innerText,
+            "About Us": "ABOUT US" === target.innerText,
+            "Services": "SERVICES" === target.innerText,
+            "Next Events": "NEXT EVENTS" === target.innerText,
+            "Sunday School": "SUNDAY SCHOOL" === target.innerText,
+            "Ministries": "MINISTRIES" === target.innerText
+        })
+    }
+
+
     return (
         <>
             <nav className={`md:mr-[15px] flex justify-between items-center fixed w-full bg-white pr-2 z-50 `}>
@@ -26,26 +50,29 @@ export const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className={`font-roboto flex max-[900px]:hidden space-x-4 lg:space-x-6`}>
-                    <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                <div className={`font-roboto flex max-[900px]:hidden space-x-4 lg:space-x-6 items-center justify-center`}>
+                    <Link href="/" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Home
                     </Link>
-                    <Link href="/about-us" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                        About us
+                    <Link href="/about-us" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                        About Us
                     </Link>
-                    <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Services
                     </Link>
-                    <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                        Sunday School
-                    </Link>
-                    <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                        Youth Ministry
-                    </Link>
-                    <Link href="/next-events" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Next Events
                     </Link>
-                    
+                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                        Sunday School
+                    </Link>
+                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                        Ministries
+                    </Link>
+                    <Link href="/next-events" className="bg-[#d63037] p-[10px] text-white text-sm font-medium uppercase whitespace-nowrap">
+                        Contact-us
+                    </Link>
+
                 </div>
 
 
@@ -53,54 +80,12 @@ export const Navbar = () => {
                     <RxHamburgerMenu className="size-6 text-gray-700" />
                 </button>
             </nav>
+            <NavSection navs={navs} show={show} setShow={setShow} />
 
-            {/* Mobile Navigation */}
-            <div className={`fixed min-[900px]:hidden top-0 left-0 w-3/4 sm:w-1/2 md:w-1/3 h-full bg-white shadow-lg transform
-            transition-transform duration-300 z-57 ${navDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
-                <div className="flex justify-between mb-5">
-                      <Logo />
-                    <button onClick={toggleNavDrawer} className="m-3">
-                        <IoMdClose className="size-6 text-gray-600" />
-                    </button>
-                </div>
-                <div className="p-4">
-                    <nav className="flex flex-col space-y-4 ml-7" onClick={toggleNavDrawer}>
-                        <Link href="/" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Home
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="/about-us" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            About us
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Services
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Sunday School
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="services" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Youth Ministry
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Branch
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="/next-events" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Next Events
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                        <Link href="/donations" className="text-gray-700 hover:text-black text-sm font-medium uppercase whitespace-nowrap">
-                            Contact-us
-                        </Link>
-                        <hr className="w-full text-gray-400" />
-                    </nav>
-                </div>
-            </div>
+            <MobileNavbar navDrawerOpen={navDrawerOpen} setNavDrawerOpen={setNavDrawerOpen} />
+
+
         </>
     )
 }

@@ -2,10 +2,21 @@ import { Hero } from "@/components/Hero"
 import { nextEventData } from "@/components/nextEvent/NextEventData"
 import WriteupCard from "@/components/WriteupCard"
 import Testimony from "@/components/testimony"
+import { Metadata } from "next"
 
-export default async function NextEventPage({ params }: { 
-    params: Promise<{ id: string }>
- }) {
+type Props = { 
+ params: Promise<{ id: string }>
+}
+
+export const generateMetadata = async ({ params }: Props ): Promise<Metadata> => {
+  const id = (await params).id
+   const event = nextEventData.find((item) => (item.id === Number(id)))
+   return {
+     title: `Next Events | ${event?.title}`
+   }
+}
+
+export default async function NextEventPage({ params }: Props) {
     const { id } = await params
     const event = nextEventData.find((item) => (item.id === Number(id)))
     

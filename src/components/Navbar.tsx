@@ -57,19 +57,19 @@ export const Navbar = () => {
                     <Link href="/about-us" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         About Us
                     </Link>
-                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="/services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Services
                     </Link>
-                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="/next-events" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Next Events
                     </Link>
-                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="/sunday-school" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Sunday School
                     </Link>
-                    <Link href="services" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="/ministries" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Ministries
                     </Link>
-                    <Link href="/next-events" className="bg-[#d63037] p-[10px] text-white text-sm font-medium uppercase whitespace-nowrap">
+                    <Link href="/contact-us" className="bg-[#d63037] p-[10px] text-white text-sm font-medium uppercase whitespace-nowrap">
                         Contact-us
                     </Link>
 

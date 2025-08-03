@@ -75,7 +75,7 @@ export const MobileNavbar = ({ navDrawerOpen, setNavDrawerOpen }: MobileNavProps
 
     return (
 
-        <div className={`fixed overflow-y-auto min-[900px]:hidden top-0 left-0 w-3/4 sm:w-1/2 md:w-1/3 h-full bg-white shadow-lg transform
+        <div className={`fixed overflow-y-auto min-[1240px]:hidden top-0 left-0 w-3/4 sm:w-1/2 md:w-1/3 h-full bg-white shadow-lg transform
             transition-transform duration-300 z-57 ${navDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
             <div className="flex justify-between mb-5">

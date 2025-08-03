@@ -50,7 +50,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className={`font-roboto flex max-[900px]:hidden space-x-4 lg:space-x-6 items-center justify-center`}>
+                <div className={`font-roboto flex max-[1240px]:hidden space-x-4 lg:space-x-6 items-center justify-center`}>
                     <Link href="/" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Home
                     </Link>
@@ -76,7 +76,7 @@ export const Navbar = () => {
                 </div>
 
 
-                <button onClick={toggleNavDrawer} className="hidden max-[900px]:block mr-5">
+                <button onClick={toggleNavDrawer} className="hidden max-[1240px]:block mr-5">
                     <RxHamburgerMenu className="size-6 text-gray-700" />
                 </button>
             </nav>

@@ -5,6 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styles from "./HeroAnimation.module.css"
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 export interface TestimonyProps {
@@ -51,6 +52,10 @@ export default function HeroAnimation({ data }: DataProps) {
     const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
     const [nextSlideIndex, setNextSlideIndex] = useState<number>(0);
     const [displaySlide, setDisplaySlide] = useState<number>(0);
+
+    const path = usePathname()
+    console.log(path);
+    
 
     // Auto-play functionality with animation
     useEffect(() => {
@@ -143,11 +148,13 @@ export default function HeroAnimation({ data }: DataProps) {
                                    data[currentSlide]?.desc || ''}
                             </div>
                             <div className={` ${styles.btn} ml-[5px]`}>
-                                <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
-                                    {data[nextSlideIndex]?.scripture  ? data[nextSlideIndex]?.scripture : (
-                                        <Link href="/services">See More</Link>
-                                    )}
-                                </button>
+                               {path === "/" && (
+                                        <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
+                                            {data[nextSlideIndex]?.scripture ? data[nextSlideIndex]?.scripture : (
+                                                <Link href="/services">See More</Link>
+                                            )}
+                                        </button>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -176,11 +183,13 @@ export default function HeroAnimation({ data }: DataProps) {
                                         data[nextSlideIndex]?.desc || ''}
                                 </div>
                                 <div className={`${styles.btn} ml-[5px]`}>
-                                    <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
-                                        {data[nextSlideIndex]?.scripture  ? data[nextSlideIndex]?.scripture : (
-                                            <Link href="/services">See More</Link>
-                                        )}
-                                    </button>
+                                    {path === "/" && (
+                                        <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
+                                            {data[nextSlideIndex]?.scripture ? data[nextSlideIndex]?.scripture : (
+                                                <Link href="/services">See More</Link>
+                                            )}
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -188,7 +197,7 @@ export default function HeroAnimation({ data }: DataProps) {
 
                     {/* Thumbnail Slides - Responsive Layout */}
                     {data.length > 1 && (
-                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-row gap-2 z-30 px-2 py-1 w-full max-w-[95vw] overflow-x-auto scrollbar-hide md:right-4 md:left-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-0 md:w-auto md:max-h-[80vh] md:overflow-y-auto md:flex-col">
+                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-row gap-2 z-30 px-2 py-1 w-full max-w-[95vw] overflow-x-auto scrollbar-hide md:right-4 md:left-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-0 md:w-auto md:max-h-[80vh] md:overflow-y-hidden md:flex-col">
                             {orderedThumbnails.map((item, index) => (
                                 <div
                                     key={index}
@@ -196,7 +205,7 @@ export default function HeroAnimation({ data }: DataProps) {
                                         backgroundImage: `url(${item.displayImage})`,
                                     }}
                                     onClick={() => changeSlide(data.findIndex((data: dataProps) => data.displayImage === item.displayImage))}
-                                    className={`flex-shrink-0 w-[12vw] h-[12vw] min-w-[50px] min-h-[50px] md:w-[70px] md:h-[70px] rounded-full shadow-[0_3px_10px_rgba(0,0,0,0.3)] bg-cover bg-center bg-no-repeat cursor-pointer transform transition-all duration-300 hover:scale-110 hover:opacity-100
+                                    className={`flex-shrink-0 w-[8vw] h-[8vw] min-w-[50px] min-h-[50px] md:w-[70px] md:h-[70px] rounded-full shadow-[0_3px_10px_rgba(0,0,0,0.3)] bg-cover bg-center bg-no-repeat cursor-pointer transform transition-all duration-300 hover:scale-110 hover:opacity-100
                                         ${index === 0 ?
                                             'border-4 border-white scale-110 opacity-100' :
                                             'opacity-80 border-2 border-transparent'}`}

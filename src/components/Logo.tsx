@@ -16,7 +16,7 @@ export const Logo = () => {
         />
       </div>
       <div className="w-px h-15 bg-gray-300 mr-2 hidden lg:block"></div>
-      <h1 className="items-center text-[20px] text-gray-600 hidden lg:block font-bold">
+      <h1 className="items-center text-[20px] text-gray-600 hidden min-[1240px]:block font-bold">
         Redeemed International<br/>Calvary Mission
       </h1>
     </div>

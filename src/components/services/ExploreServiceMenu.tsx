@@ -23,7 +23,7 @@ export const ExploreServiceMenu = ({ category, setCategory }: ExploreProps) => {
           {services.map((item, index) => (
             <div
               key={index}
-              onClick={() => setCategory(prev => (prev === item.title ? "" : item.title) as string)}
+              onClick={() => setCategory(item.title as string)}
               className="flex flex-col items-center justify-center w-xl"
             >
               <div

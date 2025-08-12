@@ -584,15 +584,64 @@ export const services: dataProps[] = [
         testimony: [
             {
                 id: 1,
-                title: "",
-                desc: "",
+                title: "Miraculous Open Doors",
+                desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
                 images: [
                     {
                         id: 1,
-                        image: ""
+                        image: "/testi-1.jpg"
                     }
                 ]
-            }
+            },
+            {
+                id: 2,
+                title: "Miraculous Open Doors",
+                desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+                images: [
+                    {
+                        id: 2,
+                        image: "/testi-2.jpg"
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: "Miraculous Open Doors",
+                desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+                images: [
+                    {
+                        id: 2,
+                        image: "/testi-3.jpg"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: "Miraculous Open Doors",
+                desc: `I want to thank God for making a way for when there was clearly no way
+         last year I was in school, trusting God for a miracle in my academics cause, there is a particular
+         Course that was really having it toil on me, I believed God, I trusted God, Lo and Behold, when the result came I got an A in that
+         course glory to Jesus.
+        `,
+                images: [
+                    {
+                        id: 2,
+                        image: "/testi-4.jpg"
+                    }
+                ]
+            },
         ],
         excerptImages: [
             {

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import CardSlider from "../CardSlider-better";
 import { services } from "../services.data";
 import Testimony from "../testimony";
 import WriteupCard from "../WriteupCard";

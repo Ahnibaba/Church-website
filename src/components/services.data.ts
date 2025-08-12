@@ -90,7 +90,7 @@ export const services: dataProps[] = [
         scripture: "",
         desc: "The Worship Service is a time set apart to honor, adore, and exalt the name of the Lord in spirit and in truth. It is a gathering of believers to give God the glory due His name through songs, prayers, the Word, and heartfelt praise.",
         displayImage: "/worship.jpg",
-        heroImage: "/e1.jpg",
+        heroImage: "/e9.jpg",
         heroWriteUp: `
           Worship Service** is a heartfelt encounter with God, where we gather to lift our voices in praise, surrender our hearts in adoration, and experience His presence in a powerful way. It is a moment to honor God for who He is and for all He has done, as we sing, pray, and receive His Word with gladness (Psalm 100:2, John 4:24). In worship, burdens are lifted, lives are transformed, and faith is renewed. Come and be part of an atmosphere filled with joy, reverence, and the overwhelming love of God as we worship Him in spirit and in truth.
 

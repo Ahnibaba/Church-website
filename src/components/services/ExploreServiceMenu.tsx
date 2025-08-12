@@ -19,7 +19,7 @@ export const ExploreServiceMenu = ({ category, setCategory }: ExploreProps) => {
           Aimed at elevating your soul and ensuring God meets you at the point of your needs while you encounter
           him personally.
         </p>
-        <div className="max-w-[400px] sm:max-w-xl lg:max-w-5xl flex justify-between items-center gap-[9px] text-center my-[20px] mx-0 overflow-x-auto scrollbar-hide">
+        <div className="max-w-[320px] sm:max-w-xl lg:max-w-5xl flex justify-between items-center gap-[9px] text-center my-[20px] mx-0 overflow-x-auto scrollbar-hide">
           {services.map((item, index) => (
             <div
               key={index}

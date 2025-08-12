@@ -70,7 +70,7 @@ export const NavSection = ({ navs, show, setShow, navSectionMenu }: navSectionPr
 
     return (
       <section
-        className={`absolute top-22 bg-white border-solid border-gray-500 p-[24px]
+        className={`fixed top-22 bg-white border-solid border-gray-500 p-[24px]
         items-center justify-center z-99 gap-4 cursor-pointer ${show ? "min-[900px]:flex": "min-[900px]-hidden"}
         ${activeIndex == 1 ? "right-105" : activeIndex == 2 ? "right-95" : activeIndex == 3 ? "right-65" :  activeIndex == 4 ? "right-25" : activeIndex == 5 ? "right-5" : "right-120"} hidden`}
         onMouseEnter={handleMouseEnter}

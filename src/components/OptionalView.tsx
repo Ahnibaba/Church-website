@@ -41,7 +41,7 @@ export const OptionalView = () => {
                             </div>
 
 
-                            <div className="flex max-[1200px]:justify-end max-[450px]:justify-center">
+                            <div className="flex max-[1200px]:justify-center max-[450px]:justify-center">
                                 <Image
                                     src="/gs.jpg"
                                     alt="about-img"

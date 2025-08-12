@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const About = () => {
     return (
-        <div className="w-full p-10">
+        <div className="w-full px-5 py-10 sm:py-10 sm:px-10">
             <div className="max-w-7xl mx-auto">
                <div className="w-full flex flex-col min-[840px]:flex-row sm:p-10 gap-5">
                   <div className="flex-1 flex flex-col items-start justify-center">
@@ -22,7 +22,7 @@ export const About = () => {
                       </Link>
                     </button>
                   </div>
-                  <div className="flex max-[840px]:justify-end max-[450px]:justify-center">
+                  <div className="flex max-[840px]:justify-center max-[450px]:justify-center">
                     <Image
                       src="/gs.jpg"
                       alt="about-img"

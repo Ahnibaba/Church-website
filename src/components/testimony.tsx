@@ -14,9 +14,11 @@ export default function Testimony({ data }: DataProps) {
                     TESTIMONIES
                 </h1>
             </div>
-            <div className="w-full max-w-3xl mb-12">
+            <div className="w-full max-w-3xl mb-5">
                 <p className="text-center font-roboto text-gray-700">
-                   Testimonies are pointers to our Heritage in christ
+                  Testimonies are sacred markers that point us back to our rich heritage in Christ. They serve as living memorials of God's faithfulness,
+                  tangible evidence of His grace at work in our lives. Each testimony is a divine signpost,
+                  reminding us of where we've come from and illuminating the path of where we're going in our spiritual journey. 
                 </p>
             </div>
 

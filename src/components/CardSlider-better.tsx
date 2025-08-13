@@ -76,7 +76,7 @@ export default function CardSlider({ data }: DataProps) {
     }, [data])
 
     return (
-        <section className="py-12 px-4 lg:px-0">
+        <section className="py-5 px-4 lg:px-0">
             <div className="container mx-auto text-center mb-10 relative">
 
                 {/* Scroll Button */}

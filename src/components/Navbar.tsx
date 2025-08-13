@@ -25,9 +25,9 @@ export const Navbar = () => {
         setNavDrawerOpen((prev) => (!prev))
     }
 
-    const toggleNav = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const toggleNav = (e: React.MouseEvent<HTMLElement>) => {
         setShow(true)
-        const target = e.target as HTMLAnchorElement
+        const target = e.target as HTMLElement
         console.log(target.innerText);
 
         setNavs({
@@ -66,9 +66,9 @@ export const Navbar = () => {
                     <Link href="/sunday-school" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Sunday School
                     </Link>
-                    <Link href="/ministries" onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
+                    <div onMouseEnter={(e) => toggleNav(e)} className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap">
                         Ministries
-                    </Link>
+                    </div>
                     <Link href="/contact-us" className="bg-[#d63037] p-[10px] text-white text-sm font-medium uppercase whitespace-nowrap">
                         Contact-us
                     </Link>

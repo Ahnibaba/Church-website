@@ -1,10 +1,25 @@
 "use client"
 
-import Image from "next/image"
 import { useState } from "react"
+import { LeaderDesk } from "./LeaderDesk"
+
 
 export const OptionalView = () => {
     const [isActive, setIsActive] = useState<string>("about-us")
+
+    const data = {
+        name: "REV. JACK S. JACK",
+        title: `General Supritendent, Redeemed International Calvary Mission`,
+        text: `The &quot;About Us&quot; section represents more than just an introduction; it is the soul of the organization expressed in words. It provides insight into the identity, mission, and vision that define the
+               heartbeat of the ministry or institution. It answers the critical questions: Who are we? Why do we exist? What do we aim to achieve? In a faith-based context,
+               this section often reflects the divine mandate upon which the ministry was founded, the calling that birthed the work, and the biblical foundation that sustains its growth. It outlines the nature of the community—whether it&apos;s a church, outreach ministry, or organization—and speaks to
+               its commitment to spiritual, moral, and social transformation. It may also highlight leadership structure, target audience,
+               geographical spread, and partnerships, giving a holistic overview that invites the reader to understand and identify with the mission. Ultimately, the &quot;About Us&quot; section serves as both an open door
+               and a guiding light, inviting others into a journey of faith, impact, and shared purpose.
+             `,
+        image: "/gs.jpg"
+
+    }
     return (
         // we may have fewer tabs, but for now lets sample it out
         <div className="mb-8">
@@ -19,42 +34,7 @@ export const OptionalView = () => {
             {isActive === "about-us" && (
                 <div className="w-full p-10">
                     <div className="max-w-7xl mx-auto">
-                        <div className="w-full flex flex-col min-[1200px]:flex-row sm:p-10 gap-5">
-                            <div className=" flex-1 flex flex-col sm:items-start justify-center">
-                                <h1 className="font-bold font-roboto text-3xl md:text-4xl lg:text-5xl text-gray-700 tracking-tighter">
-                                    REV. JACK S. JACK
-                                </h1>
-                                <h1 className="font-bold font-roboto text-2xl md:text-3xl lg:text-4xl text-gray-500 tracking-tighter">
-                                    General Supritendent, Redeemed International Calvary Mission
-                                </h1>
-                                <hr className="w-[85%] my-2 h-[2px] border-0 rounded-full bg-gray-100" />
-                                <div className="mt-4 flex items-center justify-center">
-                                    <p className="text-center max-w-3xl text-gray-600 text-lg min-[450px]:text-start">
-                                        The &quot;About Us&quot; section represents more than just an introduction; it is the soul of the organization expressed in words. It provides insight into the identity, mission, and vision that define the
-                                        heartbeat of the ministry or institution. It answers the critical questions: Who are we? Why do we exist? What do we aim to achieve? In a faith-based context,
-                                        this section often reflects the divine mandate upon which the ministry was founded, the calling that birthed the work, and the biblical foundation that sustains its growth. It outlines the nature of the community—whether it&apos;s a church, outreach ministry, or organization—and speaks to
-                                        its commitment to spiritual, moral, and social transformation. It may also highlight leadership structure, target audience,
-                                        geographical spread, and partnerships, giving a holistic overview that invites the reader to understand and identify with the mission. Ultimately, the &quot;About Us&quot; section serves as both an open door
-                                        and a guiding light, inviting others into a journey of faith, impact, and shared purpose.
-                                    </p>
-                                </div>
-                            </div>
-
-
-                            <div className="flex max-[1200px]:justify-center max-[450px]:justify-center">
-                                <Image
-                                    src="/gs.jpg"
-                                    alt="about-img"
-                                    width={720}
-                                    height={1143}
-                                    className="max-w-[25rem]"
-                                    style={{ borderRadius: "50% 0 50% 0" }}
-                                />
-                            </div>
-
-                        </div>
-
-
+                        <LeaderDesk data={data} />
                         <div className="flex flex-col items-center justify-center mt-12">
                             <h1 className="text-center font-bold font-roboto text-xl md:text-2xl lg:text-3xl text-gray-700 tracking-tighter">MISSION STATEMENT</h1>
                             <div className="max-w-5xl mx-auto mt-5">

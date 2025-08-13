@@ -70,7 +70,7 @@ export const NavSection = ({ navs, show, setShow, navSectionMenu }: navSectionPr
 
     return (
       <section
-        className={`fixed top-22 bg-white border-solid border-gray-500 p-[24px]
+        className={`fixed top-22 bg-white border-solid border-gray-500
         items-center justify-center z-99 gap-4 cursor-pointer ${show ? "min-[900px]:flex": "min-[900px]-hidden"}
         ${activeIndex == 1 ? "right-105" : activeIndex == 2 ? "right-95" : activeIndex == 3 ? "right-65" :  activeIndex == 4 ? "right-25" : activeIndex == 5 ? "right-5" : "right-120"} hidden`}
         onMouseEnter={handleMouseEnter}
@@ -81,7 +81,7 @@ export const NavSection = ({ navs, show, setShow, navSectionMenu }: navSectionPr
           ref={navSectionMenu}
         >
           {hoverData[activeIndex].content.map((item, index) => (
-            <div key={index} className="hover:bg-[#F8F8F9] py-1 px-2 rounded-[10px]">
+            <div key={index} className="flex items-center justify-center hover:bg-[#F8F8F9] py-1 px-2">
               <div className="flex flex-row max-w-[300px] items-center justify-between gap-[10px] py-[20px]">
                 <Link className="text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap" href={`ministries/${item.toLocaleLowerCase().replace(" ", "-")}`}>
                    {item}

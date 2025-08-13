@@ -1,31 +1,22 @@
 "use client"
-
 import React, { useEffect, useRef, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Link from "next/link";
 
-type ChurchesProps = {
-    id: number,
-    name: string,
-    location: string
+
+type obj = {
+ id: number,
+ name: string,
+ title: string,
+ image: string
 }
 
-type Props = {
-    id: number,
-    name: string,
-    description: string,
-    churches: ChurchesProps[]
+type imageSliderProps = {
+  data: obj[]
 }
 
-type DistrictProps = {
-    data?: Props[]
-}
-
-
-
-
-
-export default function DistrictSlider({ data }: DistrictProps) {
+export default function ImageSlider({ data }: imageSliderProps) {
+    console.log("I am dt", data);
+    
     const scrollRef = useRef<HTMLDivElement>(null)
     const [isDragging, setIsDragging] = useState<boolean>(false)
     const [startX, setStartX] = useState<number>(0)
@@ -119,20 +110,11 @@ export default function DistrictSlider({ data }: DistrictProps) {
                         key={item.id}
                         className="flex-shrink-0 w-[calc(100%-24px)] sm:w-[calc(50%-24px)] lg:w-[calc(33.333%-24px)] relative"
                     >
-                        <div className="flex flex-col h-full shadow-md rounded-lg overflow-hidden">
-                            {/* Text Content */}
-                            <div className="p-4 flex-1 flex flex-col items-center justify-center my-12">
-                                <h1 className="m-3 font-medium uppercase font-roboto text-xs md:text-sm lg:text-lg tracking-wider text-[#d63037] text-center">{item.name}</h1>
-                                <p className="text-gray-700 text-center mb-12">
-                                    {item.description.length > 250 ? item.description.slice(0, 250) + "..." : item.description }
-                                </p>
-
-                                <button className="px-5 py-2.5 cursor-pointer text-base bg-[#d63037] text-white border-2 border-white transition-colors duration-300 focus focus:outline-none hover:bg-[#d63037] hover:text-white hover:border-red-900">
-                                   <Link href={`district/${item.name}`}>
-                                      see more
-                                   </Link>
-                                </button>
-                            </div>
+                        <div
+                          className="flex flex-col h-full bg-white shadow-md rounded-lg overflow-hidden"
+                          style={{backgroundImage: item.image}}
+                          >
+                          
                         </div>
                     </div>
                 ))}

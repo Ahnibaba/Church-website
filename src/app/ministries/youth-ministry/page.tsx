@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { LeaderDesk } from "@/components/LeaderDesk";
 import NationalExcos from "@/components/NationalExcos";
 import { Ready } from "@/components/Ready";
+import "@/app/globals.css";
 
 export const metadata = {
   title: "  Youth Ministry",

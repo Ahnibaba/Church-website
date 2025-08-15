@@ -11,10 +11,10 @@ export const metadata = {
 
 export default function Youth() {
     const text = `
-     Youth ministry is more than just programs and events—it’s about discipleship, mentorship, and empowering young people to build a lasting relationship with Christ.
-     In a world full of distractions and challenges.
+     Let no man despise thy youth, but be thou an example of the believers, in word, in conversation,
+     in charity, in spirit, in faith, in purity.
     `
-    const title = "Youth Ministry"
+    const title = "Watch Word"
 
     const data = {
       name: "Evang. Aniefiok Tommy",

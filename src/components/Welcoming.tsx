@@ -20,7 +20,7 @@ export const Welcoming = () => {
       image: "/worship2.jpg",
       title: "YOUTH CHURCH",
       desc: "I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click &apos;Edit Text&apos; or double click me to add your own content and make changes to the font.",
-      link: "youth"
+      link: "youth-ministry"
     },
     {
       image: "/worship3.jpg",
@@ -74,7 +74,7 @@ export const Welcoming = () => {
                     {item.desc}
                   </p>
                   <Link 
-                    href={`/${item.link}`} 
+                    href={`/ministries/${item.link}`} 
                     className="flex items-center gap-1 uppercase tracking-tight text-xs text-[#d63037] mt-4 hover:underline"
                   >
                     <span>more info</span>

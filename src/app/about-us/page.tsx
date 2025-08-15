@@ -9,8 +9,8 @@ export const metadata = {
 
 
 export default function AboutUs() {
-    const text = "We are a mission, Commissioned to raising and nurturing God&apos;s Children for Heaven, saddled with the task of propagating sound doctrines, far from heireses, making sure the government of Heaven gains expression in the sphere of all realms."
-    const title = "About us"
+    const text = "Jesus Christ the same yesterday, and to day, and for ever - Heb 13:8"
+    const title = "Motto"
     return (
         <>
          <Hero imageString="./about-us.jpg" text={text} title={title} />

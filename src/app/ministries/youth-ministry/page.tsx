@@ -12,7 +12,7 @@ export const metadata = {
 export default function Youth() {
     const text = `
      Let no man despise thy youth, but be thou an example of the believers, in word, in conversation,
-     in charity, in spirit, in faith, in purity.
+     in charity, in spirit, in faith, in purity - 1Tim 4:12.
     `
     const title = "Watch Word"
 

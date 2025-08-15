@@ -4,45 +4,45 @@ export default function NationalExcos() {
     const data = [
       {
         id:1,
-        name: "John Doe",
+        name: "Evang. Aniefiok Tommy",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/image-c.jpg"
       },
       {
         id:2,
-        name: "John Doe",
+        name: "Evang. Inyang Ime",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/e8.jpg"
       },
       {
         id:3,
         name: "John Doe",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/image-c.jpg"
       },
       {
         id:4,
         name: "John Doe",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/image-c.jpg"
       },
       {
         id:5,
         name: "John Doe",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/image-c.jpg"
       },
       {
         id:6,
         name: "John Doe",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/image-c.jpg"
       },
       {
         id:7,
         name: "John Doe",
         title: "Chairperson",
-        image: "/image.jpg"
+        image: "/image-c.jpg"
       },
     ]
     return (

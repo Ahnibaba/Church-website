@@ -4,7 +4,9 @@ type obj = {
   name: string,
   title: string,
   text: string,
-  image: string
+  image: string,
+  width: number,
+  height: number
 }
 
 type LeaderDeskProp = {
@@ -34,8 +36,8 @@ export const LeaderDesk = ({ data }: LeaderDeskProp) => {
             <Image
                 src={data.image}
                 alt="about-img"
-                width={720}
-                height={1143}
+                width={data.width}
+                height={data.height}
                 className="max-w-[25rem]"
                 style={{ borderRadius: "50% 0 50% 0" }}
             />

@@ -17,7 +17,9 @@ export const OptionalView = () => {
                geographical spread, and partnerships, giving a holistic overview that invites the reader to understand and identify with the mission. Ultimately, the &quot;About Us&quot; section serves as both an open door
                and a guiding light, inviting others into a journey of faith, impact, and shared purpose.
              `,
-        image: "/gs.jpg"
+        image: "/gs.jpg",
+        width: 720,
+        height: 1143
 
     }
     return (

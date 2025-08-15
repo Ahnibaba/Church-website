@@ -119,7 +119,7 @@ export default function DistrictSlider({ data }: DistrictProps) {
                         key={item.id}
                         className="flex-shrink-0 w-[calc(100%-24px)] sm:w-[calc(50%-24px)] lg:w-[calc(33.333%-24px)] relative"
                     >
-                        <div className="flex flex-col h-full shadow-md rounded-lg overflow-hidden">
+                        <div className="flex flex-col h-full bg-white shadow-md rounded-lg overflow-hidden">
                             {/* Text Content */}
                             <div className="p-4 flex-1 flex flex-col items-center justify-center my-12">
                                 <h1 className="m-3 font-medium uppercase font-roboto text-xs md:text-sm lg:text-lg tracking-wider text-[#d63037] text-center">{item.name}</h1>

@@ -4,19 +4,19 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
 type obj = {
- id: number,
- name: string,
- title: string,
- image: string
+    id: number,
+    name: string,
+    title: string,
+    image: string
 }
 
 type imageSliderProps = {
-  data: obj[]
+    data: obj[]
 }
 
 export default function ImageSlider({ data }: imageSliderProps) {
     console.log("I am dt", data);
-    
+
     const scrollRef = useRef<HTMLDivElement>(null)
     const [isDragging, setIsDragging] = useState<boolean>(false)
     const [startX, setStartX] = useState<number>(0)
@@ -108,13 +108,28 @@ export default function ImageSlider({ data }: imageSliderProps) {
                 {data?.map((item) => (
                     <div
                         key={item.id}
-                        className="flex-shrink-0 w-[calc(100%-24px)] sm:w-[calc(50%-24px)] lg:w-[calc(33.333%-24px)] relative"
+                        className="flex-shrink-0 w-78 sm:w-80 lg:w-100 relative"
                     >
                         <div
-                          className="flex flex-col h-full bg-white shadow-md rounded-lg overflow-hidden"
-                          style={{backgroundImage: item.image}}
-                          >
-                          
+                            className="flex flex-col w-full h-full bg-white shadow-md rounded-lg overflow-hidden"
+                        >
+                            {/* Image as Background */}
+                            <div
+                                className="w-78 sm:w-80 lg:w-100 h-78 sm:h-80 lg:h-100 bg-cover bg-center"
+                                style={{
+                                    backgroundImage: `url(${item.image})`,
+                                    backgroundSize: 'cover',
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundPosition: 'center'
+                                }}
+                            />
+
+                        </div>
+                        <div
+                            className="absolute bottom-0 left-0 min-w-[50%] p-4 bg-black/50 backdrop-blur-sm text-start"
+                        >
+                            <h3 className="font-semibold text-white">{item.name}</h3>
+                            <p className="text-sm text-gray-200">{item.title}</p>
                         </div>
                     </div>
                 ))}

@@ -83,7 +83,7 @@ export const Navbar = () => {
             <NavSection navs={navs} show={show} setShow={setShow} />
 
 
-            <MobileNavbar navDrawerOpen={navDrawerOpen} setNavDrawerOpen={setNavDrawerOpen} />
+            <MobileNavbar navDrawerOpen={navDrawerOpen} setNavDrawerOpen={setNavDrawerOpen} toggleNavDrawer={toggleNavDrawer} />
 
 
         </>

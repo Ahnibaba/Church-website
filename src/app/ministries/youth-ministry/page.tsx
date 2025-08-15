@@ -10,7 +10,7 @@ export const metadata = {
 export default function Youth() {
     const text = `
      Youth ministry is more than just programs and events—it’s about discipleship, mentorship, and empowering young people to build a lasting relationship with Christ.
-     In a world full of distractions and challenges, youth ministry provides a safe space for teens to explore their faith, ask tough questions, and grow spiritually.
+     In a world full of distractions and challenges.
     `
     const title = "Youth Ministry"
 
@@ -24,18 +24,20 @@ export default function Youth() {
              geographical spread, and partnerships, giving a holistic overview that invites the reader to understand and identify with the mission. Ultimately, the &quot;About Us&quot; section serves as both an open door
              and a guiding light, inviting others into a journey of faith, impact, and shared purpose.
            `,
-      image: "/image.jpg"
+      image: "/image.jpg",
+      width: 720,
+      height: 1080
 
   }
     return (
         <>
           <Hero imageString="/presido.jpg" text={text} title={title} />
-          <div className="w-full p-10">
+          <div className="w-full p-5 sm:p-10">
             <div className="max-w-7xl mx-auto">
                <LeaderDesk data={data} />
-               <NationalExcos />
             </div>
           </div>
+          <NationalExcos />
         </>
     )
 }

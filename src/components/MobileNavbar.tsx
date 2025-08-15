@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation"
 type MobileNavProps = {
     navDrawerOpen: boolean;
     setNavDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>
-    toggleNavDrawer: () => void
 }
 
 type AccordionState = {
@@ -45,7 +44,7 @@ const sidebarData = [
 
 ]
 
-export const MobileNavbar = ({ navDrawerOpen, setNavDrawerOpen, toggleNavDrawer }: MobileNavProps) => {
+export const MobileNavbar = ({ navDrawerOpen, setNavDrawerOpen }: MobileNavProps) => {
     const [accordionOpen, setAccordionOpen] = useState<AccordionState>({
         0: false,
         1: false,
@@ -59,9 +58,9 @@ export const MobileNavbar = ({ navDrawerOpen, setNavDrawerOpen, toggleNavDrawer 
             ...prev, [index]: !prev[index]
         }))
     }
-    // const toggleNavDrawer = () => {
-    //     setNavDrawerOpen((prev) => (!prev))
-    // }
+    const toggleNavDrawer = () => {
+        setNavDrawerOpen((prev) => (!prev))
+    }
 
     const router = useRouter()
 
@@ -71,7 +70,6 @@ export const MobileNavbar = ({ navDrawerOpen, setNavDrawerOpen, toggleNavDrawer 
     }
 
     const handleRoute = ({content, item}: HandleRouteProps) => {
-       toggleNavDrawer()
        router.push(`/${content.title.toLocaleLowerCase()}/${item.toLocaleLowerCase().replace(" ", "-")}`)
     }
 

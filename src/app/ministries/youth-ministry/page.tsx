@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { LeaderDesk } from "@/components/LeaderDesk";
 import NationalExcos from "@/components/NationalExcos";
+import { Ready } from "@/components/Ready";
 
 export const metadata = {
   title: "  Youth Ministry",
@@ -38,6 +39,7 @@ export default function Youth() {
             </div>
           </div>
           <NationalExcos />
+          <Ready />
         </>
     )
 }

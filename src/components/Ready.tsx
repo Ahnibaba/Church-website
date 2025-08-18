@@ -1,9 +1,9 @@
 export const Ready = () => {
     return (
-        <section className="relative">
+        <section className="relative my-25">
             {/* Background Image */}
             <div
-                className="w-full h-[50vh] min-[800px]:h-[50vh] min-[1025px]:h-[100vh]"
+                className="w-full h-[50vh] min-[800px]:h-60vh] min-[1025px]:h-[100vh]"
                 style={{
                     backgroundImage: `url("/ready.jpg")`,
                     backgroundSize: "cover",

@@ -44,9 +44,9 @@ export const SundaySchoolLesson = () => {
   
   return (
     <section className="p-4">
-      <div className="flex flex-col md:flex-row items-center justify-center">
+      <div className="flex flex-col min-[1200px]:flex-row items-center justify-center">
         <div
-          className="w-full h-[130vh]"
+          className="w-full h-[980px]  flex items-center justify-center"
           style={{
             backgroundImage: `url("/s-3.jpg")`,
             backgroundSize: "cover",
@@ -54,7 +54,7 @@ export const SundaySchoolLesson = () => {
             backgroundRepeat: "no-repeat"
           }}
         >
-          <div className="flex flex-col max-w-3xl mx-auto p-5">
+          <div className="flex flex-col max-w-3xl mx-auto py-8 sm:py-5">
             <div className="w-full flex items-start justify-center text-[#FFFDD0] p-5">
               <div className="flex flex-col">
                  <div className="flex justify-end">
@@ -157,7 +157,7 @@ export const SundaySchoolLesson = () => {
               {data.map(item => (
                 <div
                   key={item.lessonNo}
-                  className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5"
+                  className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer"
                   onClick={() => displayLesson(item.lessonNo)}
                 >
                   <p className="font-bold text-[12px] text-[#d63037]">{item.date}</p>

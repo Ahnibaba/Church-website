@@ -85,13 +85,13 @@ export const SundaySchoolLesson = () => {
   useEffect(() => {
     if (searchWord && data) {
       const matchingSearches = data.filter((item) => {
-        if (item.date.includes(searchWord)) {
+        if (item.date.toLowerCase().includes(searchWord.toLowerCase())) {
           return item
-        } else if (item.topic.includes(searchWord)) {
+        } else if (item.topic.toLowerCase().includes(searchWord.toLowerCase())) {
           return item
-        } else if (item.memoryVerse.includes(searchWord)) {
+        } else if (item.memoryVerse.toLowerCase().includes(searchWord.toLowerCase())) {
           return item
-        } else if (item.text.includes(searchWord)) {
+        } else if (item.text.toLowerCase().includes(searchWord.toLowerCase())) {
           return item
         } else {
           return

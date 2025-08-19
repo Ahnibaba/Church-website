@@ -1,7 +1,7 @@
 "use client"
 import { BiSearch } from "react-icons/bi"
 import { sundaySchoolAdult, sundaySchoolTeens } from "./sundaySchool-data"
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { DisplayedLessonLoading, SundaySchoolLessonLoading } from "./SundaySchoolLoading"
 import { IoArrowForward } from "react-icons/io5"
 
@@ -31,6 +31,8 @@ export const SundaySchoolLesson = () => {
   const [loading, setLoading] = useState<boolean>(true)
   const [lessonLoading, setLessonLoading] = useState<boolean>(true)
   const [search, setSearch] = useState<boolean>(false)
+  const [searchWord, setSearchWord] = useState<string>("")
+  const [searchData, setSearchData] = useState<SundaySchoolProps[]>([])
 
 
 
@@ -75,10 +77,36 @@ export const SundaySchoolLesson = () => {
   }
 
   console.log(displayedLesson);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchWord(e.target.value)
+  }
+
+  useEffect(() => {
+    if (searchWord && data) {
+      const matchingSearches = data.filter((item) => {
+        if (item.date.includes(searchWord)) {
+          return item
+        } else if (item.topic.includes(searchWord)) {
+          return item
+        } else if (item.memoryVerse.includes(searchWord)) {
+          return item
+        } else if (item.text.includes(searchWord)) {
+          return item
+        } else {
+          return
+        }
+
+      })
+      setSearchData(matchingSearches)
+    } 
+  }, [searchWord])
+
+  console.log(searchData);
+  
   
 
-
-
+  
 
   return (
     <section className="p-4">
@@ -92,7 +120,6 @@ export const SundaySchoolLesson = () => {
             backgroundRepeat: "no-repeat"
           }}
         >
-
           {loading || !data ? (
             <DisplayedLessonLoading />
           ) : (
@@ -201,6 +228,8 @@ export const SundaySchoolLesson = () => {
                 <input
                  type="text"
                  className="w-full h-full rounded-lg border-none outline-none px-2"
+                 onChange={handleChange}
+                 value={searchWord}
                  placeholder="search"
                 />
                 <IoArrowForward className="" onClick={() => setSearch(prev => !prev)} />
@@ -208,26 +237,45 @@ export const SundaySchoolLesson = () => {
             )}
           </div>
           <div className="h-[70vh] overflow-y-scroll">
-            {lessonLoading || !data ? (
+            {lessonLoading || !data && searchWord ? (
               <SundaySchoolLessonLoading />
             ): (
               <div className="flex flex-col items-center justify-center p-2 gap-2">
-              {data.map(item => (
-                <div
-                  key={item.lessonNo}
-                  className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer"
-                  onClick={() => displayLesson(item.lessonNo)}
-                >
-                  <p className="font-bold text-[12px] text-[#d63037]">{item.date}</p>
-                  <h1 className="font-bold font-roboto text-lg text-gray-600">{item.topic}</h1>
-                  <p className="text-sm text-gray-600 my-1">{item.memoryVerse}</p>
-                  <button
-                    className="bg-[#d63037] p-3 rounded-lg text-white"
+              {searchWord ? (
+                searchData.map(item => (
+                  <div
+                    key={item.lessonNo}
+                    className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer"
+                    onClick={() => displayLesson(item.lessonNo)}
                   >
-                    {item.text}
-                  </button>
-                </div>
-              ))}
+                    <p className="font-bold text-[12px] text-[#d63037]">{item.date}</p>
+                    <h1 className="font-bold font-roboto text-lg text-gray-600">{item.topic}</h1>
+                    <p className="text-sm text-gray-600 my-1">{item.memoryVerse}</p>
+                    <button
+                      className="bg-[#d63037] p-3 rounded-lg text-white"
+                    >
+                      {item.text}
+                    </button>
+                  </div>
+                ))
+              ) : (
+                data.map(item => (
+                  <div
+                    key={item.lessonNo}
+                    className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer"
+                    onClick={() => displayLesson(item.lessonNo)}
+                  >
+                    <p className="font-bold text-[12px] text-[#d63037]">{item.date}</p>
+                    <h1 className="font-bold font-roboto text-lg text-gray-600">{item.topic}</h1>
+                    <p className="text-sm text-gray-600 my-1">{item.memoryVerse}</p>
+                    <button
+                      className="bg-[#d63037] p-3 rounded-lg text-white"
+                    >
+                      {item.text}
+                    </button>
+                  </div>
+                ))
+              )}
             </div>
             )}
           </div>

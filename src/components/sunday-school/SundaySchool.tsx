@@ -3,6 +3,7 @@ import { BiSearch } from "react-icons/bi"
 import { sundaySchoolAdult, sundaySchoolTeens } from "./sundaySchool-data"
 import { useEffect, useState } from "react"
 import { DisplayedLessonLoading, SundaySchoolLessonLoading } from "./SundaySchoolLoading"
+import { IoArrowForward } from "react-icons/io5"
 
 
 type Outline = {
@@ -29,6 +30,7 @@ export const SundaySchoolLesson = () => {
   const [displayedLesson, setDisplayedLesson] = useState<SundaySchoolProps>()
   const [loading, setLoading] = useState<boolean>(true)
   const [lessonLoading, setLessonLoading] = useState<boolean>(true)
+  const [search, setSearch] = useState<boolean>(false)
 
 
 
@@ -176,8 +178,8 @@ export const SundaySchoolLesson = () => {
           className="max-w-lg flex flex-col gap-2 p-5 items-center justify-center"
         >
           <h1 className="font-bold font-roboto text-sm md:text-md lg:text-lg text-[#d63037] uppercase tracking-tighter">Sunday School Lessons</h1>
-          <div className="w-full flex items-center justify-between pt-3 px-5">
-            <ul className="flex gap-2">
+          <div className="w-full flex items-center justify-between py-3 relative">
+            <ul className="flex gap-2 items-center justify-center">
               <li
                 className={`text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap cursor-pointer
                ${active === "Adult" ? "border-b-2 border-[#d63037]" : ""}`}
@@ -193,7 +195,17 @@ export const SundaySchoolLesson = () => {
                 Teens/Children
               </li>
             </ul>
-            <BiSearch />
+            <BiSearch onClick={() => setSearch(prev => !prev)} />
+            {search && (
+              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-600">
+                <input
+                 type="text"
+                 className="w-full h-full rounded-lg border-none outline-none px-2"
+                 placeholder="search"
+                />
+                <IoArrowForward className="" onClick={() => setSearch(prev => !prev)} />
+              </div>
+            )}
           </div>
           <div className="h-[70vh] overflow-y-scroll">
             {lessonLoading || !data ? (

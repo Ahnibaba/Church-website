@@ -236,12 +236,12 @@ export const SundaySchoolLesson = () => {
               </div>
             )}
           </div>
-          <div className="h-[70vh] overflow-y-scroll">
-            {lessonLoading || !data && searchWord ? (
+          <div className="h-[70vh] w-md overflow-y-scroll">
+            {lessonLoading || !data ? (
               <SundaySchoolLessonLoading />
             ): (
               <div className="flex flex-col items-center justify-center p-2 gap-2">
-              {searchWord ? (
+              {searchWord && searchData.length > 0 ? (
                 searchData.map(item => (
                   <div
                     key={item.lessonNo}
@@ -258,23 +258,29 @@ export const SundaySchoolLesson = () => {
                     </button>
                   </div>
                 ))
-              ) : (
-                data.map(item => (
-                  <div
-                    key={item.lessonNo}
-                    className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer"
-                    onClick={() => displayLesson(item.lessonNo)}
-                  >
-                    <p className="font-bold text-[12px] text-[#d63037]">{item.date}</p>
-                    <h1 className="font-bold font-roboto text-lg text-gray-600">{item.topic}</h1>
-                    <p className="text-sm text-gray-600 my-1">{item.memoryVerse}</p>
-                    <button
-                      className="bg-[#d63037] p-3 rounded-lg text-white"
+              ) : searchWord && searchData.length < 1 ? (
+                 <div className="flex items-center justify-center">
+                   <p className="text-center text-gray-600 ">Not Available</p>
+                 </div>
+              ): (
+                (
+                  data.map(item => (
+                    <div
+                      key={item.lessonNo}
+                      className="w-full rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer"
+                      onClick={() => displayLesson(item.lessonNo)}
                     >
-                      {item.text}
-                    </button>
-                  </div>
-                ))
+                      <p className="font-bold text-[12px] text-[#d63037]">{item.date}</p>
+                      <h1 className="font-bold font-roboto text-lg text-gray-600">{item.topic}</h1>
+                      <p className="text-sm text-gray-600 my-1">{item.memoryVerse}</p>
+                      <button
+                        className="bg-[#d63037] p-3 rounded-lg text-white"
+                      >
+                        {item.text}
+                      </button>
+                    </div>
+                  ))
+                )
               )}
             </div>
             )}

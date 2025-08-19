@@ -1,3 +1,4 @@
+import { Events } from "@/components/Events";
 import { Hero } from "@/components/Hero";
 import { LeaderDesk } from "@/components/LeaderDesk";
 import { SundaySchoolLesson } from "@/components/sunday-school/SundaySchool";
@@ -30,6 +31,7 @@ export default function SundaySchool() {
                 </div>
             </div>
             <SundaySchoolLesson />
+            <Events />
         </>
     )
 }

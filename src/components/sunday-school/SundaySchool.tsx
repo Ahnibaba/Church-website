@@ -100,7 +100,7 @@ export const SundaySchoolLesson = () => {
       })
       setSearchData(matchingSearches)
     } 
-  }, [searchWord])
+  }, [searchWord, data])
 
   console.log(searchData);
   

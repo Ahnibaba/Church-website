@@ -2,6 +2,7 @@
 import { BiSearch } from "react-icons/bi"
 import { sundaySchoolAdult, sundaySchoolTeens } from "./sundaySchool-data"
 import { useEffect, useState } from "react"
+import { DisplayedLessonLoading, SundaySchoolLessonLoading } from "./SundaySchoolLoading"
 
 
 type Outline = {
@@ -26,27 +27,65 @@ export const SundaySchoolLesson = () => {
   const [active, setActive] = useState("Adult")
   const [data, setData] = useState<SundaySchoolProps[]>([])
   const [displayedLesson, setDisplayedLesson] = useState<SundaySchoolProps>()
+  const [loading, setLoading] = useState<boolean>(true)
+  const [lessonLoading, setLessonLoading] = useState<boolean>(true)
+
+
 
   useEffect(() => {
-    if(active === "Adult") {
+    if (active === "Adult") {
       setData(sundaySchoolAdult)
+      setLessonLoading(false)
     } else {
       setData(sundaySchoolTeens)
+      setLessonLoading(false)
     }
+    
   }, [active])
 
+  useEffect(() => {
+    const find = data.find(item => (new Date().toDateString() === new Date(item.date).toDateString()))
+    console.log(find);
+
+
+    if (find) {
+      localStorage.setItem("display", JSON.stringify(find))
+      const store = localStorage.getItem("display")
+      if (store) {
+        setDisplayedLesson(JSON.parse(store))
+        setLoading(false)
+      }
+    } else {
+      const store = localStorage.getItem("display")
+      if (store) {
+        setDisplayedLesson(JSON.parse(store))
+        setLoading(false)
+      }
+    }
+
+  }, [data])
+
+
   const displayLesson = (id: number) => {
-    const findLesson = data.find(item => (item.lessonNo === id))
-    setDisplayedLesson(findLesson)
+    const foundLesson = data.find(item => (item.lessonNo === id))
+    if (!foundLesson) return
+    setDisplayedLesson(foundLesson)
+    if (new Date(foundLesson.date).toDateString() === new Date().toDateString()) {
+      localStorage.setItem("display", JSON.stringify(foundLesson))
+    }
   }
 
   console.log(displayedLesson);
-  
+
+
+
+
+
   return (
     <section className="p-4">
       <div className="flex flex-col min-[1200px]:flex-row items-center justify-center">
         <div
-          className="w-full h-[980px]  flex items-center justify-center"
+          className="w-full h-[950px] sm:h-[750px]  flex items-center justify-center"
           style={{
             backgroundImage: `url("/s-3.jpg")`,
             backgroundSize: "cover",
@@ -54,80 +93,87 @@ export const SundaySchoolLesson = () => {
             backgroundRepeat: "no-repeat"
           }}
         >
-          <div className="flex flex-col max-w-3xl mx-auto py-8 sm:py-5">
-            <div className="w-full flex items-start justify-center text-[#FFFDD0] p-5">
-              <div className="flex flex-col">
-                 <div className="flex justify-end">
-                   <h3 className="font-bold">{displayedLesson?.date}</h3>
-                 </div> 
-                <h1 className="font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-15 px-5">Topic</span>
-                      {displayedLesson?.topic}
-                    </>
-                  )}
-                  
-                </h1>
-                <p className="font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-15 px-5">Text</span>
-                      {displayedLesson?.text}
-                    </>
-                  )}
-                  
-                </p>
-                <p className="font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] px-5 flex items-center justify-center max-w-30 px-5">Memory Verse</span>
-                      {displayedLesson?.memoryVerse}
-                    </>
-                  )}
-                  
-                </p>
-                <p className="font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] px-5 flex items-center justify-center max-w-40 px-5">Aim of the Lesson</span>
-                      {displayedLesson?.aim}
-                    </>
-                  )}
-                  
-                </p>
-                <p className="font-bold font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Central Truth</span>
-                      {displayedLesson?.truth}
-                    </>
-                  )}
-                  
-                </p>
-                <p className="font-bold font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Introduction</span>
-                      {displayedLesson?.intro}
-                    </>
-                  )}
-                  
-                </p>
-                <div className="font-bold font-bold flex flex-col gap-2 mb-2">
-                  {displayedLesson && (
-                    <>
-                      <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Outlines</span>
-                      {displayedLesson.outlines.map((item) => (
-                        <p key={item.id}>{item.text}</p>
-                      ))}
-                    </>
-                  )}
-                  
+
+          {loading || !data ? (
+            <DisplayedLessonLoading />
+          ) : (
+            <>
+              <div className="flex flex-col max-w-3xl mx-auto py-8 sm:py-5">
+                <div className="w-full flex items-start justify-center text-[#FFFDD0] p-5">
+                  <div className="flex flex-col">
+                    <div className="flex justify-end">
+                      <h3 className="font-bold">{displayedLesson?.date}</h3>
+                    </div>
+                    <h1 className="font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-15 px-5">Topic</span>
+                          {displayedLesson?.topic}
+                        </>
+                      )}
+
+                    </h1>
+                    <p className="font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-15 px-5">Text</span>
+                          {displayedLesson?.text}
+                        </>
+                      )}
+
+                    </p>
+                    <p className="font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] px-5 flex items-center justify-center max-w-30 px-5">Memory Verse</span>
+                          {displayedLesson?.memoryVerse}
+                        </>
+                      )}
+
+                    </p>
+                    <p className="font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] px-5 flex items-center justify-center max-w-40 px-5">Aim of the Lesson</span>
+                          {displayedLesson?.aim}
+                        </>
+                      )}
+
+                    </p>
+                    <p className="font-bold font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Central Truth</span>
+                          {displayedLesson?.truth}
+                        </>
+                      )}
+
+                    </p>
+                    <p className="font-bold font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Introduction</span>
+                          {displayedLesson?.intro}
+                        </>
+                      )}
+
+                    </p>
+                    <div className="font-bold font-bold flex flex-col gap-2 mb-2">
+                      {displayedLesson && (
+                        <>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Outlines</span>
+                          {displayedLesson.outlines.map((item) => (
+                            <p key={item.id}>{item.text}</p>
+                          ))}
+                        </>
+                      )}
+
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </>
+          )}
         </div>
         <div
           className="max-w-lg flex flex-col gap-2 p-5 items-center justify-center"
@@ -136,24 +182,27 @@ export const SundaySchoolLesson = () => {
           <div className="w-full flex items-center justify-between pt-3 px-5">
             <ul className="flex gap-2">
               <li
-               className={`text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap cursor-pointer
+                className={`text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap cursor-pointer
                ${active === "Adult" ? "border-b-2 border-[#d63037]" : ""}`}
-               onClick={() => setActive("Adult")}
-               >
+                onClick={() => setActive("Adult")}
+              >
                 Adult
               </li>
               <li
-               className={`text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap cursor-pointer
+                className={`text-gray-700 hover:text-gray-800 text-sm font-medium uppercase whitespace-nowrap cursor-pointer
                 ${active !== "Adult" ? "border-b-2 border-[#d63037]" : ""}`}
                 onClick={() => setActive("teens/children")}
-               >
+              >
                 Teens/Children
               </li>
             </ul>
             <BiSearch />
           </div>
           <div className="h-[70vh] overflow-y-scroll">
-            <div className="flex flex-col items-center justify-center p-2 gap-2">
+            {lessonLoading || !data ? (
+              <SundaySchoolLessonLoading />
+            ): (
+              <div className="flex flex-col items-center justify-center p-2 gap-2">
               {data.map(item => (
                 <div
                   key={item.lessonNo}
@@ -171,6 +220,7 @@ export const SundaySchoolLesson = () => {
                 </div>
               ))}
             </div>
+            )}
           </div>
         </div>
       </div>

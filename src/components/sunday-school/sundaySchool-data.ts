@@ -3,7 +3,7 @@ import { SundaySchoolProps } from "./SundaySchool"
 export const sundaySchoolAdult: SundaySchoolProps[] = [
     {
       lessonNo: 1,
-      date: "August 17, 2024",
+      date: "Sun Aug 17 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -31,7 +31,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 2,
-      date: "August 24, 2024",
+      date: "August 24, 2025",
       topic: "Christ in me the hope of glory",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -59,7 +59,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 3,
-      date: "August 31, 2024",
+      date: "August 31, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -87,7 +87,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 4,
-      date: "September 7, 2024",
+      date: "September 7, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -115,7 +115,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 5,
-      date: "September 14, 2024",
+      date: "September 14, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -143,7 +143,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 6,
-      date: "September 21, 2024",
+      date: "September 21, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -171,7 +171,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 7,
-      date: "September 28, 2024",
+      date: "September 28, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -199,7 +199,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 8,
-      date: "October 5, 2024",
+      date: "October 5, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -227,7 +227,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 9,
-      date: "October 12, 2024",
+      date: "October 12, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -255,7 +255,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 10,
-      date: "October 19, 2024",
+      date: "October 19, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -283,7 +283,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 11,
-      date: "October 26, 2024",
+      date: "October 26, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -311,7 +311,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 12,
-      date: "November 2, 2024",
+      date: "November 2, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -339,7 +339,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 13,
-      date: "November 9, 2024",
+      date: "November 9, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -367,7 +367,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
     },
     {
       lessonNo: 14,
-      date: "November 16, 2024",
+      date: "November 16, 2025",
       topic: "Beware of false prophets and their messages",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -405,7 +405,7 @@ export const sundaySchoolAdult: SundaySchoolProps[] = [
 export const sundaySchoolTeens: SundaySchoolProps[] = [
     {
       lessonNo: 1,
-      date: "August 17, 2024",
+      date: "August 17, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -433,7 +433,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 2,
-      date: "August 24, 2024",
+      date: "August 24, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -461,7 +461,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 3,
-      date: "August 31, 2024",
+      date: "August 31, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -489,7 +489,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 4,
-      date: "September 7, 2024",
+      date: "September 7, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -517,7 +517,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 5,
-      date: "September 14, 2024",
+      date: "September 14, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -545,7 +545,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 6,
-      date: "September 21, 2024",
+      date: "September 21, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -573,7 +573,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 7,
-      date: "September 28, 2024",
+      date: "September 28, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -601,7 +601,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 8,
-      date: "October 5, 2024",
+      date: "October 5, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -629,7 +629,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 9,
-      date: "October 12, 2024",
+      date: "October 12, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -657,7 +657,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 10,
-      date: "October 19, 2024",
+      date: "October 19, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -685,7 +685,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 11,
-      date: "October 26, 2024",
+      date: "October 26, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -713,7 +713,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 12,
-      date: "November 2, 2024",
+      date: "November 2, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -741,7 +741,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 13,
-      date: "November 9, 2024",
+      date: "November 9, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `
@@ -769,7 +769,7 @@ export const sundaySchoolTeens: SundaySchoolProps[] = [
     },
     {
       lessonNo: 14,
-      date: "November 16, 2024",
+      date: "November 16, 2025",
       topic: "Jesus feed the multitude",
       text: "Nehemiah 6:10-19",
       memoryVerse: `

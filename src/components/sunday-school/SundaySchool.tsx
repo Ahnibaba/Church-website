@@ -236,7 +236,7 @@ export const SundaySchoolLesson = () => {
               </div>
             )}
           </div>
-          <div className="h-[70vh] w-md overflow-y-scroll">
+          <div className="h-[70vh] overflow-y-scroll">
             {lessonLoading || !data ? (
               <SundaySchoolLessonLoading />
             ): (
@@ -259,7 +259,7 @@ export const SundaySchoolLesson = () => {
                   </div>
                 ))
               ) : searchWord && searchData.length < 1 ? (
-                 <div className="flex items-center justify-center">
+                 <div className="flex items-center w-80 p-4 sm:w-md justify-center">
                    <p className="text-center text-gray-600 ">Not Available</p>
                  </div>
               ): (

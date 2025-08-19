@@ -54,8 +54,8 @@ export const DisplayedLessonLoading = () => {
 export const SundaySchoolLessonLoading = () => {
     return (
         <div className="w-full flex flex-col items-center justify-center p-2 gap-2">
-            {([1,2,3,4,5,6,7,8,9,10]).map((_, index) => (
-                <div key={index} className=" w-full min-w-[300px] sm:min-w-md flex flex-col gap-1 rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer">
+            {([...Array(14)]).map((_, index) => (
+                <div key={index} className=" w-full min-w-[320px] sm:min-w-md flex flex-col gap-4 rounded-lg p-5 shadow-sm hover:shadow-lg transition-shadow ring-1 ring-black/5 cursor-pointer">
                     <div className="h-2 w-full bg-gray-100 animate-pulse">
                     </div>
                     <div className="h-5 w-full bg-gray-100 animate-pulse">

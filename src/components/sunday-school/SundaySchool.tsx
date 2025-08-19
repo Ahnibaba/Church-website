@@ -70,6 +70,7 @@ export const SundaySchoolLesson = () => {
     const foundLesson = data.find(item => (item.lessonNo === id))
     if (!foundLesson) return
     setDisplayedLesson(foundLesson)
+    setLoading(false)
     if (new Date(foundLesson.date).toDateString() === new Date().toDateString()) {
       localStorage.setItem("display", JSON.stringify(foundLesson))
     }

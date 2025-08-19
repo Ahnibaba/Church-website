@@ -44,24 +44,24 @@ export const SundaySchoolLesson = () => {
   }, [active])
 
   useEffect(() => {
-    const find = data.find(item => (new Date().toDateString() === new Date(item.date).toDateString()))
-    console.log(find);
-
-
-    if (find) {
-      localStorage.setItem("display", JSON.stringify(find))
-      const store = localStorage.getItem("display")
-      if (store) {
-        setDisplayedLesson(JSON.parse(store))
-        setLoading(false)
-      }
-    } else {
-      const store = localStorage.getItem("display")
-      if (store) {
-        setDisplayedLesson(JSON.parse(store))
-        setLoading(false)
-      }
+    // Function to get the most recent Sunday
+    function getLastSunday(today = new Date()) {
+      const date = new Date (today)
+      date.setDate(date.getDate() - date.getDay())
+      date.setHours(0, 0, 0, 0)
+      console.log(date);
+      
+      return date
     }
+    const lastSunday = getLastSunday()
+    const currentWeekLesson = data.find((lesson) => {
+      const lessonDate = new Date(lesson.date)
+      lessonDate.setHours(0, 0, 0, 0)
+      return lessonDate.getTime() === lastSunday.getTime()
+    })
+    setDisplayedLesson(currentWeekLesson)
+    setLoading(false)
+   
 
   }, [data])
 
@@ -70,14 +70,10 @@ export const SundaySchoolLesson = () => {
     const foundLesson = data.find(item => (item.lessonNo === id))
     if (!foundLesson) return
     setDisplayedLesson(foundLesson)
-    setLoading(false)
-    if (new Date(foundLesson.date).toDateString() === new Date().toDateString()) {
-      localStorage.setItem("display", JSON.stringify(foundLesson))
-    }
   }
 
   console.log(displayedLesson);
-
+  
 
 
 

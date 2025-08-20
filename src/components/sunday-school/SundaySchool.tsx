@@ -114,7 +114,7 @@ export const SundaySchoolLesson = () => {
     <section className="p-4">
       <div className="flex flex-col min-[1200px]:flex-row items-center justify-center">
         <div
-          className="w-full h-[1200px] sm:h-[750px]  flex items-center justify-center"
+          className="w-full h-[1000px] sm:h-[750px]  flex items-center justify-center"
           style={{
             backgroundImage: `url("/s-3.jpg")`,
             backgroundSize: "cover",
@@ -130,7 +130,7 @@ export const SundaySchoolLesson = () => {
                 <div className="w-full flex items-start justify-center text-[#FFFDD0] p-5">
                   <div className="flex flex-col">
                     <div className="flex justify-between mb-5">
-                      <h3 className="font-bold">Lesson: {displayedLesson?.lessonNo}</h3>
+                      <h3 className="font-bold">{displayedLesson?.lessonNo}</h3>
                       <h3 className="font-bold">{displayedLesson?.date}</h3>
                     </div>
                     <h1 className="font-bold flex flex-col gap-2 mb-2">

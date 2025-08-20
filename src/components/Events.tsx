@@ -11,11 +11,11 @@ export const Events = () => {
     const classes = [
         {
             name: "Sunday School",
-            time: "8:30AM"
+            time: "8:30 AM"
         },
         {
             name: "Sunday School Review",
-            time: "9:40AM"
+            time: "9:30 AM"
         },
     ]
     const events = [
@@ -67,15 +67,15 @@ export const Events = () => {
                             </div>
                             <div className="">
                               {data.map((item, index) => (
-                                <div key={index} className="flex w-full py-8 pr-8 min-[1024px]:pl-5 gap-10 items-center justify-center border-b-1 border-gray-300">
+                                <div key={index} className="flex w-full py-8 pr-8 lg:pl-5 gap-10 items-center justify-center border-b-1 border-gray-300">
                                   <div className="">
                                     <h1 className="uppercase font-semibold tracking-wider text-gray-800 text-center">{item.time}</h1>
                                   </div>
-                                  <div className="flex flex-col w-full gap-3">
+                                  <div className="flex flex-col w-full gap-3 pl-7 lg:pl-5">
                                     <h3 className="uppercase font-semibold text-sm tracking-wider text-gray-600">{option}</h3>
                                     <h1 className="font-medium text-lg sm:text-2xl text-gray-800">{item.name}</h1>
                                   </div>
-                                  <IoArrowForward size={45} className="" />
+                                  <IoArrowForward size={45} className="hidden sm:flex" />
                                 </div>
                               ))}
                             </div>

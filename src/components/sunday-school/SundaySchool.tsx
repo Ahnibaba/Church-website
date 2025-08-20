@@ -13,7 +13,7 @@ type Outline = {
 
 }
 export type SundaySchoolProps = {
-  lessonNo: number,
+  lessonNo: string,
   date: string;
   topic: string;
   text: string;
@@ -70,7 +70,7 @@ export const SundaySchoolLesson = () => {
   }, [data])
 
 
-  const displayLesson = (id: number) => {
+  const displayLesson = (id: string) => {
     const foundLesson = data.find(item => (item.lessonNo === id))
     if (!foundLesson) return
     setDisplayedLesson(foundLesson)
@@ -93,7 +93,9 @@ export const SundaySchoolLesson = () => {
           return item
         } else if (item.text.toLowerCase().includes(searchWord.toLowerCase())) {
           return item
-        } else {
+        } else if (item.lessonNo.toLowerCase().includes(searchWord.toLowerCase())){
+          return item
+        }else {
           return
         }
 
@@ -112,7 +114,7 @@ export const SundaySchoolLesson = () => {
     <section className="p-4">
       <div className="flex flex-col min-[1200px]:flex-row items-center justify-center">
         <div
-          className="w-full h-[950px] sm:h-[750px]  flex items-center justify-center"
+          className="w-full h-[1200px] sm:h-[750px]  flex items-center justify-center"
           style={{
             backgroundImage: `url("/s-3.jpg")`,
             backgroundSize: "cover",
@@ -127,7 +129,8 @@ export const SundaySchoolLesson = () => {
               <div className="flex flex-col max-w-3xl mx-auto py-8 sm:py-5">
                 <div className="w-full flex items-start justify-center text-[#FFFDD0] p-5">
                   <div className="flex flex-col">
-                    <div className="flex justify-end">
+                    <div className="flex justify-between mb-5">
+                      <h3 className="font-bold">Lesson: {displayedLesson?.lessonNo}</h3>
                       <h3 className="font-bold">{displayedLesson?.date}</h3>
                     </div>
                     <h1 className="font-bold flex flex-col gap-2 mb-2">
@@ -232,7 +235,10 @@ export const SundaySchoolLesson = () => {
                  value={searchWord}
                  placeholder="search"
                 />
-                <IoArrowForward className="" onClick={() => setSearch(prev => !prev)} />
+                <IoArrowForward className="" onClick={() => {
+                  setSearch(prev => !prev)
+                  setSearchWord("")
+                }} />
               </div>
             )}
           </div>

@@ -2,7 +2,16 @@
 
 import { useState } from "react"
 import { LeaderDesk } from "./LeaderDesk"
+import { FaAngleDown, FaAngleUp } from "react-icons/fa"
 
+type AccordionState = {
+    [key: number]: boolean
+}
+type Dis = {
+    title: string;
+    statement: string;
+    exp: string
+}
 
 export const OptionalView = () => {
     const [isActive, setIsActive] = useState<string>("about-us")
@@ -22,6 +31,56 @@ export const OptionalView = () => {
         height: 1143
 
     }
+
+    const aboutData = [
+        {
+            title: "Mission",
+            statement: `Commissioned to Raising and Nurturing God's people for Heaven`,
+            exp: `
+          Our mission is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded,
+          and empowered by the Holy Spirit. By teaching sound doctrine, we ensure that believers are not tossed by every wind of false teaching,
+          but are firmly established in the truth of God's Word. Through Spirit-led worship, we cultivate a deep intimacy with God, inviting His presence to dwell among us and transform lives
+        `
+        },
+        {
+            title: "Vision",
+            statement: `Evangelism, Teaching the Word of God, Prayer, Missionary/Social welfare and Training of Christian Workers`,
+            exp: `
+          Our mission is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded, and empowered by the Holy Spirit. By teaching sound doctrine, 
+          we ensure that believers are not tossed by every wind of false teaching, but are firmly established in the truth of God's Word
+        `
+        },
+        {
+            title: "Motto",
+            statement: `Jesus Christ the same yesterday, and to day, and for ever - Heb 13:8`,
+            exp: `
+          Just as He was faithful, loving, and mighty in the past, He remains the same today and will continue to be so forever
+        `
+        },
+    ]
+
+
+    const [accordionOpen, setAccordionOpen] = useState<AccordionState>({
+        0: false,
+        1: false,
+        2: false
+    })
+    const [display, setDisplay] = useState<Dis>({
+        title: "Mission",
+        statement: `Commissioned to Raising and Nurturing God's people for Heaven`,
+        exp: `
+      Our mission is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded,
+      and empowered by the Holy Spirit. By teaching sound doctrine, we ensure that believers are not tossed by every wind of false teaching,
+      but are firmly established in the truth of God's Word. Through Spirit-led worship, we cultivate a deep intimacy with God, inviting His presence to dwell among us and transform lives
+    `
+    })
+
+    const toggleAccordion = (index: number) => {
+        setDisplay(aboutData[index])
+        setAccordionOpen((prev) => ({
+            ...prev, [index]: !prev[index]
+        }))
+    }
     return (
         // we may have fewer tabs, but for now lets sample it out
         <div className="mb-8">
@@ -37,41 +96,42 @@ export const OptionalView = () => {
                 <div className="w-full p-10">
                     <div className="max-w-7xl mx-auto">
                         <LeaderDesk data={data} />
-                        <div className="flex flex-col items-center justify-center mt-12">
-                            <h1 className="text-center font-bold font-roboto text-xl md:text-2xl lg:text-3xl text-gray-700 tracking-tighter">MISSION STATEMENT</h1>
-                            <div className="max-w-5xl mx-auto mt-5">
-                                <p className="text-center text-[#d63037] text-lg font-medium">
-                                    To raise and nurture a Christ-centered people through sound doctrine, Spirit-led worship,
-                                    and unwavering commitment to the Great Commission.
-                                </p>
+                        <div className="flex flex-col sm:flex-row items-center justify-center my-4">
+                            <div className="w-md flex flex-col items-center justify-center p-4 gap-2">
+                                {aboutData.map((item, index) => (
+                                    <div key={index}>
+                                        <div
+                                            onClick={() => toggleAccordion(index)}
+                                            className="flex items-center justify-between p-5 w-full shadow-sm hover:shadow-lg
+                                            hover:ring hover:ring-1 hover:ring-black/20">
+                                            <h3 className="uppercase text-center font-bold font-roboto text-xl text-gray-500 tracking-tighter">{item.title}</h3>
+                                            {accordionOpen[index] ? (
+                                                <FaAngleUp className="text-gray-500 cursor-pointer" />
+                                            ) : (
+                                                <FaAngleDown className="text-gray-500 cursor-pointer" />
+                                            )}
+                                        </div>
+                                        <div
+                                            className={`grid overflow-hidden transition-all duration-500 ease-in-out text-slate-600 text-sm
+                                            ${accordionOpen[index] ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"} `}
+                                        >
+                                            <p className="overflow-hidden text-gray-600 text-sm p-4">{item.exp}</p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
-
-                            <div className="max-w-5xl mx-auto flex items-center justify-center mt-5">
-                                <p className="text-center text-gray-600 text-lg">
-                                    Our mission is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded, and empowered by the Holy Spirit. By teaching sound doctrine, we ensure that believers are not tossed by every wind of false teaching, but are firmly established in the truth of God&apos;s Word. Through Spirit-led worship,
-                                    we cultivate a deep intimacy with God, inviting His presence to dwell among us and transform lives. Our unwavering commitment to the Great Commission drives us to evangelize the lost, disciple the saved, and equip believers to be salt and
-                                    light in a darkened world. We are called to build a community where faith is alive, love is practiced, and every soul finds its place
-                                    in God&apos;s divine purpose.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center justify-center mt-12">
-                            <h1 className="text-center font-bold font-roboto text-xl md:text-2xl lg:text-3xl text-gray-700 tracking-tighter">VISION STATEMENT</h1>
-                            <div className="max-w-5xl mx-auto mt-5">
-                                <p className="text-center text-[#d63037] text-lg font-medium">
-                                    To raise and nurture a Christ-centered people through sound doctrine, Spirit-led worship,
-                                    and unwavering commitment to the Great Commission.
-                                </p>
-                            </div>
-
-                            <div className="max-w-5xl mx-auto flex items-center justify-center mt-5">
-                                <p className="text-center text-gray-600 text-lg">
-                                    Our mission is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded, and empowered by the Holy Spirit. By teaching sound doctrine, we ensure that believers are not tossed by every wind of false teaching, but are firmly established in the truth of God&apos;s Word. Through Spirit-led worship,
-                                    we cultivate a deep intimacy with God, inviting His presence to dwell among us and transform lives. Our unwavering commitment to the Great Commission drives us to evangelize the lost, disciple the saved, and equip believers to be salt and
-                                    light in a darkened world. We are called to build a community where faith is alive, love is practiced, and every soul finds its place
-                                    in God&apos;s divine purpose.
-                                </p>
+                            <div
+                                className="flex-1 relative h-[500px] min-h-[300px] flex items-center justify-center"
+                                style={{
+                                    backgroundImage: `url("/s-3.jpg")`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat"
+                                }}
+                            >
+                                <div className="flex items-center justify-center">
+                                    <h1 className="text-center text-[#FFFDD0] font-bold text-lg max-w-xl">{display.statement}</h1>
+                                </div>
                             </div>
                         </div>
 

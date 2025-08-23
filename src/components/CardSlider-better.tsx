@@ -111,7 +111,7 @@ export default function CardSlider({ data }: DataProps) {
                 {data?.map((item) => (
                     <div
                         key={item?.id}
-                        className="flex-shrink-0 w-[calc(100%-24px)] sm:w-[calc(50%-24px)] lg:w-[calc(33.333%-24px)] relative"
+                        className="flex-shrink-0 w-[calc(100%-24px)] sm:w-[calc(50%-24px)] xl:w-[calc(33.333%-24px)] relative"
                     >
                         <div className="flex flex-col h-full bg-white shadow-md rounded-lg overflow-hidden">
                             {/* Text Content */}

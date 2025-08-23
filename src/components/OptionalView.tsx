@@ -96,8 +96,8 @@ export const OptionalView = () => {
                 <div className="w-full p-10">
                     <div className="max-w-7xl mx-auto">
                         <LeaderDesk data={data} />
-                        <div className="flex flex-col sm:flex-row items-center justify-center my-4">
-                            <div className="w-md flex flex-col items-center justify-center p-4 gap-2">
+                        <div className="flex flex-col md:flex-row items-center justify-center my-4">
+                            <div className="flex-1 flex flex-col items-center justify-center p-4 gap-2">
                                 {aboutData.map((item, index) => (
                                     <div key={index}>
                                         <div

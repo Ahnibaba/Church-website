@@ -46,7 +46,7 @@ export const OptionalView = () => {
             title: "Vision",
             statement: `Evangelism, Teaching the Word of God, Prayer, Missionary/Social welfare and Training of Christian Workers`,
             exp: `
-          Our mission is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded, and empowered by the Holy Spirit. By teaching sound doctrine, 
+          Our vision is rooted in the desire to see individuals grow into the fullness of Christ—spiritually mature, biblically grounded, and empowered by the Holy Spirit. By teaching sound doctrine, 
           we ensure that believers are not tossed by every wind of false teaching, but are firmly established in the truth of God's Word
         `
         },
@@ -84,11 +84,11 @@ export const OptionalView = () => {
     return (
         // we may have fewer tabs, but for now lets sample it out
         <div className="mb-8">
-            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8 p-6 font-roboto text-5 text-gray-700 uppercase cursor-pointer border-b-2 border-gray-300">
-                <h3 onClick={() => setIsActive("about-us")} className={`${isActive === "about-us" ? "border-b-5 border-[#d63037]" : ""} hover:text-gray-800`}>About Us</h3>
-                <h3 onClick={() => setIsActive("tenet-faith")} className={`${isActive === "tenet-faith" ? "border-b-5 border-[#d63037]" : ""} hover:text-gray-800`}>Tenet of Faith</h3>
-                <h3 onClick={() => setIsActive("core-values")} className={`${isActive === "core-values" ? "border-b-5 border-[#d63037]" : ""} hover:text-gray-800`}>Core Values</h3>
-                <h3 onClick={() => setIsActive("history")} className={`${isActive === "history" ? "border-b-5 border-[#d63037]" : ""} hover:text-gray-800`}>Historical background</h3>
+            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8 pt-6 font-roboto text-md font-bold text-gray-600 uppercase cursor-pointer border-b-2 border-gray-300">
+                <h3 onClick={() => setIsActive("about-us")} className={`${isActive === "about-us" ? "border-b-3 border-[#d63037]" : ""} hover:text-gray-700`}>About Us</h3>
+                <h3 onClick={() => setIsActive("tenet-faith")} className={`${isActive === "tenet-faith" ? "border-b-3 border-[#d63037]" : ""} hover:text-gray-700`}>Tenet of Faith</h3>
+                <h3 onClick={() => setIsActive("core-values")} className={`${isActive === "core-values" ? "border-b-3 border-[#d63037]" : ""} hover:text-gray-700`}>Core Values</h3>
+                <h3 onClick={() => setIsActive("history")} className={`${isActive === "history" ? "border-b-3 border-[#d63037]" : ""} hover:text-gray-700`}>Historical background</h3>
             </div>
 
 
@@ -96,14 +96,14 @@ export const OptionalView = () => {
                 <div className="w-full p-10">
                     <div className="max-w-7xl mx-auto">
                         <LeaderDesk data={data} />
-                        <div className="flex flex-col md:flex-row items-center justify-center my-4">
+                        <div className="flex flex-col-reverse md:flex-row items-center justify-center my-4">
                             <div className="flex-1 flex flex-col items-center justify-center p-4 gap-2">
                                 {aboutData.map((item, index) => (
                                     <div key={index}>
                                         <div
                                             onClick={() => toggleAccordion(index)}
                                             className="flex items-center justify-between p-5 w-full shadow-sm hover:shadow-lg
-                                            hover:ring hover:ring-1 hover:ring-black/20">
+                                            hover:ring hover:ring-1 hover:ring-black/20 cursor-pointer">
                                             <h3 className="uppercase text-center font-bold font-roboto text-xl text-gray-500 tracking-tighter">{item.title}</h3>
                                             {accordionOpen[index] ? (
                                                 <FaAngleUp className="text-gray-500 cursor-pointer" />
@@ -115,7 +115,10 @@ export const OptionalView = () => {
                                             className={`grid overflow-hidden transition-all duration-500 ease-in-out text-slate-600 text-sm
                                             ${accordionOpen[index] ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"} `}
                                         >
-                                            <p className="overflow-hidden text-gray-600 text-sm p-4">{item.exp}</p>
+                                            <div className="overflow-hidden p-4">
+                                              <p className="text-[#d63037] text-center text-lg text-bold">{item.statement}</p>
+                                              <p className="text-gray-600 text-sm">{item.exp}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}
@@ -129,8 +132,9 @@ export const OptionalView = () => {
                                     backgroundRepeat: "no-repeat"
                                 }}
                             >
+                                <h3 className="absolute top-0 left-0 text-white text-lg px-3 font-bold bg-[#d63037]">{display.title}</h3>
                                 <div className="flex items-center justify-center">
-                                    <h1 className="text-center text-[#FFFDD0] font-bold text-lg max-w-xl">{display.statement}</h1>
+                                    <h1 className="text-center text-[#FFFDD0] font-bold font-platFair text-xl md:text-2xl lg:text-3xl max-w-xl">{display.statement}</h1>
                                 </div>
                             </div>
                         </div>

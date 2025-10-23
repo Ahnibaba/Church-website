@@ -1,7 +1,7 @@
 "use client"
 import { BiSearch } from "react-icons/bi"
 import { sundaySchoolAdult, sundaySchoolTeens } from "./sundaySchool-data"
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { DisplayedLessonLoading, SundaySchoolLessonLoading } from "./SundaySchoolLoading"
 import { IoArrowForward } from "react-icons/io5"
 
@@ -34,6 +34,7 @@ export const SundaySchoolLesson = () => {
   const [searchWord, setSearchWord] = useState<string>("")
   const [searchData, setSearchData] = useState<SundaySchoolProps[]>([])
 
+  const displayRef = useRef<HTMLDivElement | null>(null)
 
 
   useEffect(() => {
@@ -74,6 +75,8 @@ export const SundaySchoolLesson = () => {
     const foundLesson = data.find(item => (item.lessonNo === id))
     if (!foundLesson) return
     setDisplayedLesson(foundLesson)
+
+    displayRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
   console.log(displayedLesson);
@@ -112,7 +115,7 @@ export const SundaySchoolLesson = () => {
 
   return (
     <section className="p-4">
-      <div className="flex flex-col min-[1200px]:flex-row items-center justify-center">
+      <div ref={displayRef} className="flex flex-col min-[1200px]:flex-row items-center justify-center">
         <div
           className="w-full h-[1000px] sm:h-[750px]  flex items-center justify-center"
           style={{
@@ -154,7 +157,7 @@ export const SundaySchoolLesson = () => {
                     <p className="font-bold flex flex-col gap-2 mb-2">
                       {displayedLesson && (
                         <>
-                          <span className="whitespace-nowrap bg-[#d63037] px-5 flex items-center justify-center max-w-30 px-5">Memory Verse</span>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Memory Verse</span>
                           {displayedLesson?.memoryVerse}
                         </>
                       )}
@@ -163,13 +166,13 @@ export const SundaySchoolLesson = () => {
                     <p className="font-bold flex flex-col gap-2 mb-2">
                       {displayedLesson && (
                         <>
-                          <span className="whitespace-nowrap bg-[#d63037] px-5 flex items-center justify-center max-w-40 px-5">Aim of the Lesson</span>
+                          <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-40 px-5">Aim of the Lesson</span>
                           {displayedLesson?.aim}
                         </>
                       )}
 
                     </p>
-                    <p className="font-bold font-bold flex flex-col gap-2 mb-2">
+                    <p className="font-bold flex flex-col gap-2 mb-2">
                       {displayedLesson && (
                         <>
                           <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Central Truth</span>
@@ -178,7 +181,7 @@ export const SundaySchoolLesson = () => {
                       )}
 
                     </p>
-                    <p className="font-bold font-bold flex flex-col gap-2 mb-2">
+                    <p className="font-bold flex flex-col gap-2 mb-2">
                       {displayedLesson && (
                         <>
                           <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Introduction</span>
@@ -187,7 +190,7 @@ export const SundaySchoolLesson = () => {
                       )}
 
                     </p>
-                    <div className="font-bold font-bold flex flex-col gap-2 mb-2">
+                    <div className="font-bold flex flex-col gap-2 mb-2">
                       {displayedLesson && (
                         <>
                           <span className="whitespace-nowrap bg-[#d63037] flex items-center justify-center max-w-30 px-5">Outlines</span>
@@ -227,7 +230,7 @@ export const SundaySchoolLesson = () => {
             </ul>
             <BiSearch onClick={() => setSearch(prev => !prev)} />
             {search && (
-              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-600">
+              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-600 px-5">
                 <input
                  type="text"
                  className="w-full h-full rounded-lg border-none outline-none px-2"

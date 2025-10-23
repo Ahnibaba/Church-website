@@ -93,7 +93,7 @@ export const OptionalView = () => {
 
 
             {isActive === "about-us" && (
-                <div className="w-full p-10">
+                <div className="w-full p-5">
                     <div className="max-w-7xl mx-auto">
                         <LeaderDesk data={data} />
                         <div className="flex flex-col-reverse md:flex-row items-center justify-center my-4">
@@ -103,7 +103,7 @@ export const OptionalView = () => {
                                         <div
                                             onClick={() => toggleAccordion(index)}
                                             className="flex items-center justify-between p-5 w-full shadow-sm hover:shadow-lg
-                                            hover:ring hover:ring-1 hover:ring-black/20 cursor-pointer">
+                                             hover:ring-1 hover:ring-black/20 cursor-pointer">
                                             <h3 className="uppercase text-center font-bold font-roboto text-xl text-gray-500 tracking-tighter">{item.title}</h3>
                                             {accordionOpen[index] ? (
                                                 <FaAngleUp className="text-gray-500 cursor-pointer" />
@@ -116,7 +116,7 @@ export const OptionalView = () => {
                                             ${accordionOpen[index] ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"} `}
                                         >
                                             <div className="overflow-hidden p-4">
-                                              <p className="text-[#d63037] text-center text-lg text-bold">{item.statement}</p>
+                                              <p className="text-[#d63037] text-lg text-bold">{item.statement}</p>
                                               <p className="text-gray-600 text-sm">{item.exp}</p>
                                             </div>
                                         </div>
@@ -124,7 +124,7 @@ export const OptionalView = () => {
                                 ))}
                             </div>
                             <div
-                                className="flex-1 relative h-[500px] min-h-[300px] flex items-center justify-center"
+                                className="hidden md:flex flex-1 relative h-[500px] min-h-[300px] items-center justify-center"
                                 style={{
                                     backgroundImage: `url("/s-3.jpg")`,
                                     backgroundSize: "cover",

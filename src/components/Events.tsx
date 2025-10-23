@@ -37,7 +37,7 @@ export const Events = () => {
      } else {
         setData(events) 
      }
-    }, [option])
+    }, [option, classes, events])
     return (
         <div className="bg-[#D3CCBA]/20 p-5">
             <div className="max-w-xl min-[1024px]:max-w-6xl mx-auto">
